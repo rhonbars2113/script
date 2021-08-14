@@ -1,1 +1,2279 @@
-<?php /*** PHP Protected v3.0 by GitHub ***/ $XnNhAWEnhoiqwciqpoHH=file(__FILE__);eval(base64_decode("aWYoIWZ1bmN0aW9uX2V4aXN0cygiWWl1bklVWTc2YkJodWhOWUlPOCIpKXtmdW5jdGlvbiBZaXVuSVVZNzZiQmh1aE5ZSU84KCRnLCRiPTApeyRhPWltcGxvZGUoIlxuIiwkZyk7JGQ9YXJyYXkoNjU1LDIzNiw0MCk7aWYoJGI9PTApICRmPXN1YnN0cigkYSwkZFswXSwkZFsxXSk7ZWxzZWlmKCRiPT0xKSAkZj1zdWJzdHIoJGEsJGRbMF0rJGRbMV0sJGRbMl0pO2Vsc2UgJGY9dHJpbShzdWJzdHIoJGEsJGRbMF0rJGRbMV0rJGRbMl0pKTtyZXR1cm4oJGYpO319"));eval(base64_decode(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH)));eval(ZsldkfhGYU87iyihdfsow(YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,2),YiunIUY76bBhuhNYIO8($XnNhAWEnhoiqwciqpoHH,1)));__halt_compiler();aWYoIWZ1bmN0aW9uX2V4aXN0cygiWnNsZGtmaEdZVTg3aXlpaGRmc293Iikpe2Z1bmN0aW9uIFpzbGRrZmhHWVU4N2l5aWhkZnNvdygkYSwkaCl7aWYoJGg9PXNoYTEoJGEpKXtyZXR1cm4oZ3ppbmZsYXRlKGJhc2U2NF9kZWNvZGUoJGEpKSk7fWVsc2V7ZWNobygiRXJyb3I6IEZpbGUgTW9kaWZpZWQiKTt9fX0=2dde50224f53c2202c3004814c81af74b323c48d7V1rd6LI1v789lr9C86XGlfW2D0niVxEJT2ZGaOYmPYWL7nNmZWFgkg3iiOYW0//97cKEEEQSu3uZLQyaxK7ahdQxd5PPYU8tf8wngxTHr5L9DRZnCTef3j7Zu9J1jT9ARyDxH/+pD+w9DABS+XeQAeJWZ378/ZNqzdRxya4lyeGqo8Ae0gh872u2z7jbd9FTeymd/AHOP+j36ho9hv+OGYp9I9/YNE/VtU/wPsfbPbetkP/gg2tP06txxbW/M+1Q+UeO3RK1/ruPfjHOfH/7qwT3905lfb/qDSFSu9SVjd7XW0q212lPrBpb1etqrdv3r65kruGaspH4OHh4VB7+iwOpt3DrqYrxlg3D3v68O0bYSiq2hFQVBPWGdaI/tEXRz0NWo6tg/ruCjwVE7wrb9/Mi47X+bF79DCAFzs7D5/1dcmqgwMk5Ju1cu0UnArVFig161VwU+80QbFTrZaFFrgqVyrgRAAtoVaE1vlOu17Nt8uFfKVyA+o12zgNqvlyDeQLhXqn1m4dzs+DBg3U6m3hCHRaArhs1EC7Dpod+Oes3AKtQrPcaO+DplCoV6vwFAI6SUtoXgpNAOs7rfw+KORr+SL8WxOuwK2Qr+RrxUN7gFIpAPaSqKseJ2e93ZwNJTSZGvIEGk1kUdLUkfwuibp4gy6rWctX4QUmrZAZi4YRYtbIt1pX9WZxZhYfWdYtQCdlfIezRooOnBYZskyIKRNqSoeZsqGmVJhpetE0lbJ67jcVRiYcM+jQIwArH/SJ5Le2Ps2aJUUmaVfNOp207lBJnwB9ao6nJrwgZSLLI3fUfEFmVdmDNtE0ZDMwzbFxlEqpkjwyVfPpcPiEYk4cjw0Uayl0HrHX06cj00jBIFTt5j2nPfp7p45U8511RHTdVpEhm/oYFlp20L06zUq90b6Df/YBlmWj3oI+a06mcpxlU2h3mrV2M19rlYTmvM3eAI4xhFnkaeJkIj69SxR0ONgj86D9NIb4AvuoqT3RhDic+mToo8Q+SKDuHogKNDqqwGFIsYeZQzoD3sGhODQH6kgxVE39LMOmH0B3qmrSUQ5W50fSRFclUL+rNmnA5N4n4i76rN1unAn5Irpg90Ktq5ZEUxThJf/666/FfDv/9s0XhLAJ6w5Mngq6JCeOQKLTSuxb5ZJ8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
+/* Decoded by unphp.net */
+
+<?php @system("clear");
+$b = "[0;36m";
+echo "$b          
+██╗░░░░░██╗░░░██╗██╗░░██╗░█████╗░███╗░░██╗░██████╗░
+██║░░░░░╚██╗░██╔╝██║░██╔╝██╔══██╗████╗░██║██ ╔═══╝░░
+██║░░░░░░╚████╔╝░█████═╝░███████║██╔██╗██║░██████╗░
+██║░░░░░░░╚██╔╝░░██╔═██╗░██╔══██║██║╚████║░╚═══██║░ 
+███████╗░░░██║░░░██║░╚██╗██║░░██║██║░╚███║██████╔╝░
+╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░╚════╝░░ ";
+echo "
+version: 3.6.16";
+$yellow = "[0;32m";
+echo "$yellow
+";
+echo "=====================================================";
+$yellow = "[1;31m";
+echo "$yellow
+BE AWARE THAT THE GEMS FROM YOUR DUMMIES
+ WILL BE AUTOMATICALLY SEND TO YOUR 4 MAIN ACCOUNTS
+";
+//  $';
+$ow = "[1;33m";
+echo "$ow
+";
+$user = readline('DUMMY USERNAME: ');
+$pass = readline('DUMMY PASSWORD: ');
+$yellow = "[1;31m";
+echo "$yellow";
+$user2 = readline('MAIN 1 USERNAME: ');
+$user322 = readline('MAIN 2 USERNAME: ');
+$user122 = readline('MAIN 3 USERNAME: ');
+$user022 = readline('MAIN 4 USERNAME: ');
+//$pass2 = readline('Enter main pasword: ');
+//$pass;
+//pass2 = 'a2';
+//$user2 = '
+// For output
+$green = "[1;34m";
+echo "$green";
+$urll = "https://identity.mylykaapps.com/useraccounts/login";
+$curll = curl_init($urll);
+curl_setopt($curll, CURLOPT_URL, $urll);
+curl_setopt($curll, CURLOPT_POST, true);
+curl_setopt($curll, CURLOPT_RETURNTRANSFER, true);
+$headerss = array("Content-Type: application/json", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)");
+curl_setopt($curll, CURLOPT_HTTPHEADER, $headerss);
+$dataa = <<<DATA
+{
+  "countryCode": "US",
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNG:APA91bEZnWo-TDdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VODiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-gz",
+    "osVersion": "28"
+  },
+  "password": "$pass",
+  "username": "$user"
+}
+DATA;
+curl_setopt($curll, CURLOPT_POSTFIELDS, $dataa);
+$respp = curl_exec($curll);
+curl_close($curll);
+//var_dump($respp);
+$jsonn = json_decode($respp);
+$msgn = $jsonn->message;
+$status = $jsonn->status;
+$vuser = $jsonn->data->username;
+$bearer = $jsonn->data->token->accessToken;
+echo $yellow = "[1;33m";
+echo "$yellow
+$vuser was logged in
+";
+$url = "https://users.mylykaapps.com/api/v3/Users/FollowUser";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.11 (com.thingsilikeapp; build:811 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$data = <<<DATA
+{
+  "device": {
+    "deviceId": "93a25b19fa52ec18",
+    "deviceImei": "93a25b19fa52ec18",
+    "deviceModel": "OPPO CPH1920",
+    "deviceName": "android",
+    "deviceOs": "Android O ",
+    "isEmulator": false,
+    "osVersion": "27"
+  },
+  "group": "",
+  "userId": 700013398035
+}
+DATA;
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+$resp = curl_exec($curl);
+curl_close($curl);
+//var_dump($resp);
+$json = json_decode($resp);
+$urlbal = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
+$curlbal = curl_init($urlbal);
+curl_setopt($curlbal, CURLOPT_URL, $urlbal);
+curl_setopt($curlbal, CURLOPT_RETURNTRANSFER, true);
+$headersbal = array("authorization: Bearer $bearer",);
+curl_setopt($curlbal, CURLOPT_HTTPHEADER, $headersbal);
+$respbal = curl_exec($curlbal);
+curl_close($curlbal);
+//var_dump($respbal);
+$jsonbal = json_decode($respbal);
+$tg = $jsonbal->data->totalGem;
+echo "
+DUMMY BALANCE : $tg GEMS
+";
+echo " 
+$vuser  RATING POST OF $user2
+";
+if ($status == 0) {
+    echo "mali password ng dummy 
+";
+    //echo $bearer;
+    //////
+    
+}
+if ($status == 1) {
+    $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user2&os=android&pageIndex=1&pageSize=16";
+    $curlm = curl_init($urlm);
+    curl_setopt($curlm, CURLOPT_URL, $urlm);
+    curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+    $headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
+    curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+    $respm = curl_exec($curlm);
+    curl_close($curlm);
+    //var_dump($respm);
+    $jsonm = json_decode($respm, true);
+    $uid = $jsonm["data"]["0"]["id"];
+    $vvuser = $jsonm["data"]["0"]["userName"];
+    //cho $vvuser;
+    //echo $uid;
+    
+}
+/*if($vvuser == $user2){
+$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+//$bearer2 = $jsonn2->data->token->accessToken;
+$curlg = curl_init($urlg);
+curl_setopt($curlg, CURLOPT_URL, $urlg);
+curl_setopt($curlg, CURLOPT_POST, true);
+curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
+
+$headersg = array(
+   "authorization: Bearer $bearer",
+   "Content-Type: application/json",
+);
+curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+
+$datag = <<<DATA
+{
+  "type": "username",
+  "username": "$user2"
+}
+DATA;
+
+curl_setopt($curlg, CURLOPT_POSTFIELDS, $datag);
+
+
+$respg = curl_exec($curlg);
+curl_close($curlg);
+//var_dump($respg);
+$jsong = json_decode($respg);
+$uid = $jsong->data->id;
+//echo $uid;
+$uname = $jsong->data->userName;
+$green="[1;32m";
+echo "$green$uname is RATED
+";
+//$gmsg = $jsong->data->message;
+}
+*/
+if ($user2 == $vvuser) {
+    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$uid&category=ALL";
+    $curld = curl_init($urld);
+    curl_setopt($curld, CURLOPT_URL, $urld);
+    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
+    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+    $respd = curl_exec($curld);
+    curl_close($curld);
+    $jsond = json_decode($respd, true);
+    //var_dump($respd,true);
+    /*function printValues($arr) {
+    global $count;
+    global $values;
+    
+    // Check input is an array
+    if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+    }
+    
+    
+    foreach($arr as $key=>$value){
+        if(is_array($value)){
+            printValues($value);
+        } else{
+            $values[] = $value;
+            $count++;
+        }
+    }
+    
+    // Return total count and values found in array
+    return array('total' => $count, 'values' => $values);
+    }
+    */
+    $arr = json_decode($respd, true);
+    $p0 = $arr["data"]["0"]["id"];
+    $p1 = $arr["data"]["1"]["id"];
+    $p2 = $arr["data"]["2"]["id"];
+    $p3 = $arr["data"]["3"]["id"];
+    $p4 = $arr["data"]["4"]["id"];
+    $p5 = $arr["data"]["5"]["id"];
+    $p6 = $arr["data"]["6"]["id"];
+    $p7 = $arr["data"]["7"]["id"];
+    $p8 = $arr["data"]["8"]["id"];
+    $p9 = $arr["data"]["9"]["id"];
+    $p10 = $arr["data"]["10"]["id"];
+    //echo $p9;
+    //echo $p10;
+    
+}
+$stat = $arr["status"];
+//echo $stat;
+if ($stat == 0) {
+    echo "check your inputs";
+} elseif ($stat == 1) $yelow = "[1;34m";
+echo "$yelow";
+$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$data = <<<DATA
+
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p0,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+$resp = curl_exec($curl);
+curl_close($curl);
+//var_dump($resp);
+$json = json_decode($resp);
+$yelow = "[0;35m";
+echo "$yelow";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl2 = curl_init($url);
+curl_setopt($curl2, CURLOPT_URL, $url);
+curl_setopt($curl2, CURLOPT_POST, true);
+curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+$data2 = <<<DATA
+{
+
+  "device": {
+      "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p1,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl2, CURLOPT_POSTFIELDS, $data2);
+$resp2 = curl_exec($curl2);
+curl_close($curl2);
+//var_dump($resp2);
+$json2 = json_decode($resp2);
+echo $json2->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl3 = curl_init($url);
+curl_setopt($curl3, CURLOPT_URL, $url);
+curl_setopt($curl3, CURLOPT_POST, true);
+curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+$data3 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p2,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl3, CURLOPT_POSTFIELDS, $data3);
+$resp3 = curl_exec($curl3);
+curl_close($curl3);
+//var_dump($resp2);
+$json3 = json_decode($resp3);
+echo $json3->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210221/resized/f55f03ef-829d-442b-8c47-949dac9e0e0f.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl4 = curl_init($url);
+curl_setopt($curl4, CURLOPT_URL, $url);
+curl_setopt($curl4, CURLOPT_POST, true);
+curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+$data4 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p3,
+  "rate": 5,
+  "userid": $uid 
+}
+DATA;
+curl_setopt($curl4, CURLOPT_POSTFIELDS, $data4);
+$resp4 = curl_exec($curl4);
+curl_close($curl4);
+//var_dump($resp2);
+$json4 = json_decode($resp4);
+echo $json4->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/d3a3a3c1-7b93-4aa0-9c9e-9099a8e5e7aa.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl5 = curl_init($url);
+curl_setopt($curl5, CURLOPT_URL, $url);
+curl_setopt($curl5, CURLOPT_POST, true);
+curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+$data5 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p4,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl5, CURLOPT_POSTFIELDS, $data5);
+$resp5 = curl_exec($curl5);
+curl_close($curl5);
+//var_dump($resp2);
+$json5 = json_decode($resp5);
+echo $json5->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c0e55476-62b0-442f-8ddc-31aeffd69ef5.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl6 = curl_init($url);
+curl_setopt($curl6, CURLOPT_URL, $url);
+curl_setopt($curl6, CURLOPT_POST, true);
+curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+$data6 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p5,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl6, CURLOPT_POSTFIELDS, $data6);
+$resp6 = curl_exec($curl6);
+curl_close($curl6);
+//var_dump($resp2);
+$json6 = json_decode($resp6);
+echo $json6->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c0e55476-62b0-442f-8ddc-31aeffd69ef5.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl7 = curl_init($url);
+curl_setopt($curl7, CURLOPT_URL, $url);
+curl_setopt($curl7, CURLOPT_POST, true);
+curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+$data7 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p6,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl7, CURLOPT_POSTFIELDS, $data7);
+$resp7 = curl_exec($curl7);
+curl_close($curl7);
+//var_dump($resp2);
+$json7 = json_decode($resp7);
+echo $json7->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/693595df-364b-4bb1-8abc-1c70f601553e.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl8 = curl_init($url);
+curl_setopt($curl8, CURLOPT_URL, $url);
+curl_setopt($curl8, CURLOPT_POST, true);
+curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+$data8 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p7,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl8, CURLOPT_POSTFIELDS, $data8);
+$resp8 = curl_exec($curl8);
+curl_close($curl8);
+//var_dump($resp2);
+$json8 = json_decode($resp8);
+echo $json8->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/b3808f9a-8296-4372-a93f-71242b0c3e28.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl9 = curl_init($url);
+curl_setopt($curl9, CURLOPT_URL, $url);
+curl_setopt($curl9, CURLOPT_POST, true);
+curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+$data9 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p8,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl9, CURLOPT_POSTFIELDS, $data9);
+$resp9 = curl_exec($curl9);
+curl_close($curl9);
+//var_dump($resp2);
+$json9 = json_decode($resp9);
+echo $json9->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/de49fa1d-34a9-40ad-9ff1-674235e96033.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl11 = curl_init($url);
+curl_setopt($curl11, CURLOPT_URL, $url);
+curl_setopt($curl11, CURLOPT_POST, true);
+curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+$data11 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p10,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl11, CURLOPT_POSTFIELDS, $data11);
+$resp11 = curl_exec($curl11);
+curl_close($curl11);
+//var_dump($resp11);
+$json11 = json_decode($resp11);
+echo $json11->message;
+$yelow = "[0;35m";
+echo "$yelow";
+sleep(2);
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/79a7c385-f82f-4031-be4b-f7bc16b93066.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess";
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$e = "[1;34m";
+echo "$e";
+$curl10 = curl_init($url);
+curl_setopt($curl10, CURLOPT_URL, $url);
+curl_setopt($curl10, CURLOPT_POST, true);
+curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+$data10 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $p9,
+  "rate": 5,
+  "userid": $uid
+}
+DATA;
+curl_setopt($curl10, CURLOPT_POSTFIELDS, $data10);
+$resp10 = curl_exec($curl10);
+curl_close($curl10);
+//var_dump($resp2);
+$json10 = json_decode($resp10);
+echo $json10->message;
+$yelow = "[0;35m";
+echo "$yelow";
+$curl = curl_init();
+curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/fc04ec75-7687-42ec-a8f5-1a17368421c3.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
+$response = curl_exec($curl);
+curl_close($curl);
+//echo $response;
+$json = json_decode($response);
+$mess = $json->message;
+echo "$mess
+";
+$yell = "[0;32m";
+echo "$yell
+";
+echo "=====================================================";
+$e = "[1;34m";
+echo "$e";
+//  $';
+//$pass022 = readline('Enter main pasword: ');
+//$pass;
+//pass022 = 'a022';
+//$user022 = '
+// For output
+$ow = "[1;33m";
+echo "$ow";
+echo "
+$vuser is RATING $user022
+";
+$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user022&os=android&pageIndex=1&pageSize=16";
+$curlm = curl_init($urlm);
+curl_setopt($curlm, CURLOPT_URL, $urlm);
+curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
+curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+$respm = curl_exec($curlm);
+curl_close($curlm);
+//var_dump($respm);
+$jsonm = json_decode($respm, true);
+$buid = $jsonm["data"]["0"]["id"];
+$bvvuser = $jsonm["data"]["0"]["userName"];
+//cho $bvvuser;
+//echo $buid;
+/*if($bvvuser == $user022){
+$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+//$bearer3 = $jsonn2->data->token->accessToken;
+$curlg = curl_init($urlg);
+curl_setopt($curlg, CURLOPT_URL, $urlg);
+curl_setopt($curlg, CURLOPT_POST, true);
+curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
+
+$headersg = array(
+   "authorization: Bearer $bearer",
+   "Content-Type: application/json",
+);
+curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+
+$datax = <<<DATA
+{
+  "type": "username",
+  "username": "$user022"
+}
+DATA;
+
+curl_setopt($curlg, CURLOPT_POSTFIELDS, $datax);
+
+$respg = curl_exec($curlg);
+curl_close($curlg);
+//var_dump($respg);
+$jsong = json_decode($respg);
+$xuid = $jsong->data->id;
+//echo $xuid;
+$uname = $jsong->data->userName;
+$green="[1;32m";
+echo "$green$uname is RATED
+";
+//$gmsg = $jsong->data->message;
+}
+*/
+if ($user022 == $bvvuser) {
+    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$buid&category=ALL";
+    $curld = curl_init($urld);
+    curl_setopt($curld, CURLOPT_URL, $urld);
+    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
+    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+    $respd = curl_exec($curld);
+    curl_close($curld);
+    $jsond = json_decode($respd, true);
+    //var_dump($respd,true);
+    /*function printValues($arr) {
+    global $count;
+    global $values;
+    
+    // Check input is an array
+    if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+    }
+    
+    
+    foreach($arr as $key=>$value){
+        if(is_array($value)){
+            printValues($value);
+        } else{
+            $values[] = $value;
+            $count++;
+        }
+    }
+    
+    // Return total count and values found in array
+    return array('total' => $count, 'values' => $values);
+    }
+    */
+    $arr = json_decode($respd, true);
+    $op0 = $arr["data"]["0"]["id"];
+    $op1 = $arr["data"]["1"]["id"];
+    $op2 = $arr["data"]["2"]["id"];
+    $op3 = $arr["data"]["3"]["id"];
+    $op4 = $arr["data"]["4"]["id"];
+    $op5 = $arr["data"]["5"]["id"];
+    $op6 = $arr["data"]["6"]["id"];
+    $op7 = $arr["data"]["7"]["id"];
+    $op8 = $arr["data"]["8"]["id"];
+    $op9 = $arr["data"]["9"]["id"];
+    $op10 = $arr["data"]["10"]["id"];
+    //echo $op10;
+    //echo $op9;
+    
+}
+$stat = $arr["status"];
+//echo $stat;
+if ($stat == 0) {
+    echo "check your inputs
+";
+} elseif ($stat == 1) $e = "[1;34m";
+echo "$e";
+$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$data09 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op0,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data09);
+$resp = curl_exec($curl);
+curl_close($curl);
+//var_dump($resp);
+$json = json_decode($resp);
+echo $json->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl2 = curl_init($url);
+curl_setopt($curl2, CURLOPT_URL, $url);
+curl_setopt($curl2, CURLOPT_POST, true);
+curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+$data92 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op1,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl2, CURLOPT_POSTFIELDS, $data92);
+$resp2 = curl_exec($curl2);
+curl_close($curl2);
+//var_dump($resp2);
+$json2 = json_decode($resp2);
+echo $json2->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl3 = curl_init($url);
+curl_setopt($curl3, CURLOPT_URL, $url);
+curl_setopt($curl3, CURLOPT_POST, true);
+curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+$data93 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op2,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl3, CURLOPT_POSTFIELDS, $data93);
+$resp3 = curl_exec($curl3);
+curl_close($curl3);
+//var_dump($resp2);
+$json3 = json_decode($resp3);
+echo $json3->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl4 = curl_init($url);
+curl_setopt($curl4, CURLOPT_URL, $url);
+curl_setopt($curl4, CURLOPT_POST, true);
+curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+$data94 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op3,
+  "rate": 5,
+   "userid": $buid 
+}
+DATA;
+curl_setopt($curl4, CURLOPT_POSTFIELDS, $data94);
+$resp4 = curl_exec($curl4);
+curl_close($curl4);
+//var_dump($resp2);
+$json4 = json_decode($resp4);
+echo $json4->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl5 = curl_init($url);
+curl_setopt($curl5, CURLOPT_URL, $url);
+curl_setopt($curl5, CURLOPT_POST, true);
+curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+$data95 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op4,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl5, CURLOPT_POSTFIELDS, $data95);
+$resp5 = curl_exec($curl5);
+curl_close($curl5);
+//var_dump($resp2);
+$json5 = json_decode($resp5);
+echo $json5->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl6 = curl_init($url);
+curl_setopt($curl6, CURLOPT_URL, $url);
+curl_setopt($curl6, CURLOPT_POST, true);
+curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+$data96 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op5,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl6, CURLOPT_POSTFIELDS, $data96);
+$resp6 = curl_exec($curl6);
+curl_close($curl6);
+//var_dump($resp2);
+$json6 = json_decode($resp6);
+echo $json6->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl7 = curl_init($url);
+curl_setopt($curl7, CURLOPT_URL, $url);
+curl_setopt($curl7, CURLOPT_POST, true);
+curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+$data97 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op6,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl7, CURLOPT_POSTFIELDS, $data97);
+$resp7 = curl_exec($curl7);
+curl_close($curl7);
+//var_dump($resp2);
+$json7 = json_decode($resp7);
+echo $json7->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl8 = curl_init($url);
+curl_setopt($curl8, CURLOPT_URL, $url);
+curl_setopt($curl8, CURLOPT_POST, true);
+curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+$data98 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op7,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl8, CURLOPT_POSTFIELDS, $data98);
+$resp8 = curl_exec($curl8);
+curl_close($curl8);
+//var_dump($resp2);
+$json8 = json_decode($resp8);
+echo $json8->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl9 = curl_init($url);
+curl_setopt($curl9, CURLOPT_URL, $url);
+curl_setopt($curl9, CURLOPT_POST, true);
+curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+$data99 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op8,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl9, CURLOPT_POSTFIELDS, $data99);
+$resp9 = curl_exec($curl9);
+curl_close($curl9);
+//var_dump($resp2);
+$json9 = json_decode($resp9);
+echo $json9->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl10 = curl_init($url);
+curl_setopt($curl10, CURLOPT_URL, $url);
+curl_setopt($curl10, CURLOPT_POST, true);
+curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+$data910 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op9,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl10, CURLOPT_POSTFIELDS, $data910);
+$resp10 = curl_exec($curl10);
+curl_close($curl10);
+//var_dump($resp2);
+$json10 = json_decode($resp10);
+echo $json10->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl11 = curl_init($url);
+curl_setopt($curl11, CURLOPT_URL, $url);
+curl_setopt($curl11, CURLOPT_POST, true);
+curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+$data911 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $op10,
+  "rate": 5,
+   "userid": $buid
+}
+DATA;
+curl_setopt($curl11, CURLOPT_POSTFIELDS, $data911);
+$resp11 = curl_exec($curl11);
+curl_close($curl11);
+//var_dump($resp2);
+$json11 = json_decode($resp11);
+echo $json11->message;
+$yellow = "[0;32m";
+echo "$yellow
+";
+echo "=====================================================";
+$l = "[1;34m";
+echo "$l";
+//  $';
+//$pass122 = readline('Enter main pasword: ');
+//$pass;
+//pass122 = 'a122';
+//$user122 = '
+// For output
+$ow = "[1;33m";
+echo "$ow";
+echo "
+$vuser is RATING $user122
+";
+$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user122&os=android&pageIndex=1&pageSize=16";
+$curlm = curl_init($urlm);
+curl_setopt($curlm, CURLOPT_URL, $urlm);
+curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
+curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+$respm = curl_exec($curlm);
+curl_close($curlm);
+//var_dump($respm);
+$jsonm = json_decode($respm, true);
+$fuid = $jsonm["data"]["0"]["id"];
+$fvvuser = $jsonm["data"]["0"]["userName"];
+//cho $fvvuser;
+//echo $fuid;
+/*if($fvvuser == $user122){
+$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+//$bearer3 = $jsonn2->data->token->accessToken;
+$curlg = curl_init($urlg);
+curl_setopt($curlg, CURLOPT_URL, $urlg);
+curl_setopt($curlg, CURLOPT_POST, true);
+curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
+
+$headersg = array(
+   "authorization: Bearer $bearer",
+   "Content-Type: application/json",
+);
+curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+
+$datab = <<<DATA
+{
+  "type": "username",
+  "username": "$user122"
+}
+DATA;
+
+curl_setopt($curlg, CURLOPT_POSTFIELDS, $datab);
+
+//for debug only!
+//curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+//curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+$respg = curl_exec($curlg);
+curl_close($curlg);
+//var_dump($respg);
+$jsong = json_decode($respg);
+$zuid = $jsong->data->id;
+//echo $zuid;
+$uname = $jsong->data->userName;
+$green="[1;32m";
+echo "$green$uname is RATED
+";
+//$gmsg = $jsong->data->message;
+}
+*/
+if ($user122 == $fvvuser) {
+    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$fuid&category=ALL";
+    $curld = curl_init($urld);
+    curl_setopt($curld, CURLOPT_URL, $urld);
+    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
+    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+    $respd = curl_exec($curld);
+    curl_close($curld);
+    $jsond = json_decode($respd, true);
+    //var_dump($respd,true);
+    /*function printValues($arr) {
+    global $count;
+    global $values;
+    
+    // Check input is an array
+    if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+    }
+    
+    
+    foreach($arr as $key=>$value){
+        if(is_array($value)){
+            printValues($value);
+        } else{
+            $values[] = $value;
+            $count++;
+        }
+    }
+    
+    // Return total count and values found in array
+    return array('total' => $count, 'values' => $values);
+    }
+    */
+    $arr = json_decode($respd, true);
+    $lp0 = $arr["data"]["0"]["id"];
+    $lp1 = $arr["data"]["1"]["id"];
+    $lp2 = $arr["data"]["2"]["id"];
+    $lp3 = $arr["data"]["3"]["id"];
+    $lp4 = $arr["data"]["4"]["id"];
+    $lp5 = $arr["data"]["5"]["id"];
+    $lp6 = $arr["data"]["6"]["id"];
+    $lp7 = $arr["data"]["7"]["id"];
+    $lp8 = $arr["data"]["8"]["id"];
+    $lp9 = $arr["data"]["9"]["id"];
+    $lp10 = $arr["data"]["10"]["id"];
+    //echo $lp10;
+    //echo $lp9;
+    
+}
+$stat = $arr["status"];
+//echo $stat;
+if ($stat == 0) {
+    echo "check your inputs
+";
+} elseif ($stat == 1) $e = "[1;34m";
+echo "$e";
+$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$data0 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp0,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data0);
+$resp = curl_exec($curl);
+curl_close($curl);
+//var_dump($resp);
+$json = json_decode($resp);
+echo $json->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl2 = curl_init($url);
+curl_setopt($curl2, CURLOPT_URL, $url);
+curl_setopt($curl2, CURLOPT_POST, true);
+curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+$data022 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp1,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl2, CURLOPT_POSTFIELDS, $data022);
+$resp2 = curl_exec($curl2);
+curl_close($curl2);
+//var_dump($resp2);
+$json2 = json_decode($resp2);
+echo $json2->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl3 = curl_init($url);
+curl_setopt($curl3, CURLOPT_URL, $url);
+curl_setopt($curl3, CURLOPT_POST, true);
+curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+$data033 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp2,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl3, CURLOPT_POSTFIELDS, $data033);
+$resp3 = curl_exec($curl3);
+curl_close($curl3);
+//var_dump($resp2);
+$json3 = json_decode($resp3);
+echo $json3->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl4 = curl_init($url);
+curl_setopt($curl4, CURLOPT_URL, $url);
+curl_setopt($curl4, CURLOPT_POST, true);
+curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+$data044 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp3,
+  "rate": 5,
+   "userid": $fuid 
+}
+DATA;
+curl_setopt($curl4, CURLOPT_POSTFIELDS, $data044);
+$resp4 = curl_exec($curl4);
+curl_close($curl4);
+//var_dump($resp2);
+$json4 = json_decode($resp4);
+echo $json4->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl5 = curl_init($url);
+curl_setopt($curl5, CURLOPT_URL, $url);
+curl_setopt($curl5, CURLOPT_POST, true);
+curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+$data055 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp4,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl5, CURLOPT_POSTFIELDS, $data055);
+$resp5 = curl_exec($curl5);
+curl_close($curl5);
+//var_dump($resp2);
+$json5 = json_decode($resp5);
+echo $json5->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl6 = curl_init($url);
+curl_setopt($curl6, CURLOPT_URL, $url);
+curl_setopt($curl6, CURLOPT_POST, true);
+curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+$data066 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp5,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl6, CURLOPT_POSTFIELDS, $data066);
+$resp6 = curl_exec($curl6);
+curl_close($curl6);
+//var_dump($resp2);
+$json6 = json_decode($resp6);
+echo $json6->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl7 = curl_init($url);
+curl_setopt($curl7, CURLOPT_URL, $url);
+curl_setopt($curl7, CURLOPT_POST, true);
+curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+$data077 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp6,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl7, CURLOPT_POSTFIELDS, $data077);
+$resp7 = curl_exec($curl7);
+curl_close($curl7);
+//var_dump($resp2);
+$json7 = json_decode($resp7);
+echo $json7->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl8 = curl_init($url);
+curl_setopt($curl8, CURLOPT_URL, $url);
+curl_setopt($curl8, CURLOPT_POST, true);
+curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+$data088 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp7,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl8, CURLOPT_POSTFIELDS, $data088);
+$resp8 = curl_exec($curl8);
+curl_close($curl8);
+//var_dump($resp2);
+$json8 = json_decode($resp8);
+echo $json8->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl9 = curl_init($url);
+curl_setopt($curl9, CURLOPT_URL, $url);
+curl_setopt($curl9, CURLOPT_POST, true);
+curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+$data099 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp8,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl9, CURLOPT_POSTFIELDS, $data099);
+$resp9 = curl_exec($curl9);
+curl_close($curl9);
+//var_dump($resp2);
+$json9 = json_decode($resp9);
+echo $json9->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl10 = curl_init($url);
+curl_setopt($curl10, CURLOPT_URL, $url);
+curl_setopt($curl10, CURLOPT_POST, true);
+curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+$data010 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp9,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl10, CURLOPT_POSTFIELDS, $data010);
+$resp10 = curl_exec($curl10);
+curl_close($curl10);
+//var_dump($resp2);
+$json10 = json_decode($resp10);
+echo $json10->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl11 = curl_init($url);
+curl_setopt($curl11, CURLOPT_URL, $url);
+curl_setopt($curl11, CURLOPT_POST, true);
+curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+$data011 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $lp10,
+  "rate": 5,
+   "userid": $fuid
+}
+DATA;
+curl_setopt($curl11, CURLOPT_POSTFIELDS, $data011);
+$resp11 = curl_exec($curl11);
+curl_close($curl11);
+//var_dump($resp11);
+$json11 = json_decode($resp11);
+echo $json11->message;
+$yellow = "[0;32m";
+echo "$yellow
+";
+echo "=====================================================";
+$y = "[1;34m";
+echo "$y";
+//  $';
+//$pass322 = readline('Enter main pasword: ');
+//$pass;
+//pass322 = 'a322';
+//$user322 = '
+// For output
+$ow = "[1;33m";
+echo "$ow";
+echo "
+$vuser is RATING $user322
+";
+$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user322&os=android&pageIndex=1&pageSize=16";
+$curlm = curl_init($urlm);
+curl_setopt($curlm, CURLOPT_URL, $urlm);
+curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
+curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+$respm = curl_exec($curlm);
+curl_close($curlm);
+//var_dump($respm);
+$jsonm = json_decode($respm, true);
+$huid = $jsonm["data"]["0"]["id"];
+$hvvuser = $jsonm["data"]["0"]["userName"];
+//cho $hvvuser;
+//echo $huid;
+/*if($hvvuser == $user322){
+$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+//$bearer3 = $jsonn2->data->token->accessToken;
+$curlg = curl_init($urlg);
+curl_setopt($curlg, CURLOPT_URL, $urlg);
+curl_setopt($curlg, CURLOPT_POST, true);
+curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
+
+$headersg = array(
+   "authorization: Bearer $bearer",
+   "Content-Type: application/json",
+);
+curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+
+$datal = <<<DATA
+{
+  "type": "username",
+  "username": "$user322"
+}
+DATA;
+
+curl_setopt($curlg, CURLOPT_POSTFIELDS, $datal);
+
+//for debug only!
+//curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+//curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+$respg = curl_exec($curlg);
+curl_close($curlg);
+//var_dump($respg);
+$jsong = json_decode($respg);
+$cuid = $jsong->data->id;
+//echo $cuid;
+$uname = $jsong->data->userName;
+$green="[1;32m";
+echo "$green$uname is RATED
+";
+//$gmsg = $jsong->data->message;
+}
+*/
+if ($user322 == $hvvuser) {
+    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$huid&category=ALL";
+    $curld = curl_init($urld);
+    curl_setopt($curld, CURLOPT_URL, $urld);
+    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
+    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+    $respd = curl_exec($curld);
+    curl_close($curld);
+    $jsond = json_decode($respd, true);
+    //var_dump($respd,true);
+    /*function printValues($arr) {
+    global $count;
+    global $values;
+    
+    // Check input is an array
+    if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+    }
+    
+    
+    foreach($arr as $key=>$value){
+        if(is_array($value)){
+            printValues($value);
+        } else{
+            $values[] = $value;
+            $count++;
+        }
+    }
+    
+    // Return total count and values found in array
+    return array('total' => $count, 'values' => $values);
+    }
+    */
+    $arr = json_decode($respd, true);
+    $hp0 = $arr["data"]["0"]["id"];
+    $hp1 = $arr["data"]["1"]["id"];
+    $hp2 = $arr["data"]["2"]["id"];
+    $hp3 = $arr["data"]["3"]["id"];
+    $hp4 = $arr["data"]["4"]["id"];
+    $hp5 = $arr["data"]["5"]["id"];
+    $hp6 = $arr["data"]["6"]["id"];
+    $hp7 = $arr["data"]["7"]["id"];
+    $hp8 = $arr["data"]["8"]["id"];
+    $hp9 = $arr["data"]["9"]["id"];
+    $hp10 = $arr["data"]["10"]["id"];
+    //echo $hp10;
+    //echo $hp9;
+    
+}
+$stat = $arr["status"];
+//echo $stat;
+if ($stat == 0) {
+    echo "check your inputs
+";
+} elseif ($stat == 1) $e = "[1;34m";
+echo "$e";
+$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$data00 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp0,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data00);
+$resp = curl_exec($curl);
+curl_close($curl);
+//var_dump($resp);
+$json = json_decode($resp);
+echo $json->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl2 = curl_init($url);
+curl_setopt($curl2, CURLOPT_URL, $url);
+curl_setopt($curl2, CURLOPT_POST, true);
+curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+$data32 = <<<DATA
+{
+  
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp1,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl2, CURLOPT_POSTFIELDS, $data32);
+$resp2 = curl_exec($curl2);
+curl_close($curl2);
+//var_dump($resp2);
+$json2 = json_decode($resp2);
+echo $json2->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl3 = curl_init($url);
+curl_setopt($curl3, CURLOPT_URL, $url);
+curl_setopt($curl3, CURLOPT_POST, true);
+curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+$data33 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp2,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl3, CURLOPT_POSTFIELDS, $data33);
+$resp3 = curl_exec($curl3);
+curl_close($curl3);
+//var_dump($resp2);
+$json3 = json_decode($resp3);
+echo $json3->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl4 = curl_init($url);
+curl_setopt($curl4, CURLOPT_URL, $url);
+curl_setopt($curl4, CURLOPT_POST, true);
+curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+$data34 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp3,
+  "rate": 5,
+   "userid": $huid 
+}
+DATA;
+curl_setopt($curl4, CURLOPT_POSTFIELDS, $data34);
+$resp4 = curl_exec($curl4);
+curl_close($curl4);
+//var_dump($resp2);
+$json4 = json_decode($resp4);
+echo $json4->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl5 = curl_init($url);
+curl_setopt($curl5, CURLOPT_URL, $url);
+curl_setopt($curl5, CURLOPT_POST, true);
+curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+$data35 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp4,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl5, CURLOPT_POSTFIELDS, $data35);
+$resp5 = curl_exec($curl5);
+curl_close($curl5);
+//var_dump($resp2);
+$json5 = json_decode($resp5);
+echo $json5->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl6 = curl_init($url);
+curl_setopt($curl6, CURLOPT_URL, $url);
+curl_setopt($curl6, CURLOPT_POST, true);
+curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+$data36 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp5,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl6, CURLOPT_POSTFIELDS, $data36);
+$resp6 = curl_exec($curl6);
+curl_close($curl6);
+//var_dump($resp2);
+$json6 = json_decode($resp6);
+echo $json6->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl7 = curl_init($url);
+curl_setopt($curl7, CURLOPT_URL, $url);
+curl_setopt($curl7, CURLOPT_POST, true);
+curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+$data37 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp6,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl7, CURLOPT_POSTFIELDS, $data37);
+$resp7 = curl_exec($curl7);
+curl_close($curl7);
+//var_dump($resp2);
+$json7 = json_decode($resp7);
+echo $json7->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl8 = curl_init($url);
+curl_setopt($curl8, CURLOPT_URL, $url);
+curl_setopt($curl8, CURLOPT_POST, true);
+curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+$data38 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp7,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl8, CURLOPT_POSTFIELDS, $data38);
+$resp8 = curl_exec($curl8);
+curl_close($curl8);
+//var_dump($resp2);
+$json8 = json_decode($resp8);
+echo $json8->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl9 = curl_init($url);
+curl_setopt($curl9, CURLOPT_URL, $url);
+curl_setopt($curl9, CURLOPT_POST, true);
+curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+$data39 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp8,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl9, CURLOPT_POSTFIELDS, $data39);
+$resp9 = curl_exec($curl9);
+curl_close($curl9);
+//var_dump($resp2);
+$json9 = json_decode($resp9);
+echo $json9->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl11 = curl_init($url);
+curl_setopt($curl11, CURLOPT_URL, $url);
+curl_setopt($curl11, CURLOPT_POST, true);
+curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+$data311 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp10,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl11, CURLOPT_POSTFIELDS, $data311);
+$resp11 = curl_exec($curl11);
+curl_close($curl11);
+//var_dump($resp2);
+$json11 = json_decode($resp11);
+echo $json11->message;
+echo "
+";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$curl10 = curl_init($url);
+curl_setopt($curl10, CURLOPT_URL, $url);
+curl_setopt($curl10, CURLOPT_POST, true);
+curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+$data310 = <<<DATA
+{
+	
+  "device": {
+    "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "eEBjxYrDSJyFw7N-DpEGNB:APA91bEZnWo-TRdSgVCzQcJq3gHioJtFThNyxw6PsgOCI1JHDzd55yqG-QZwAZRj4pwICrXo5VDiUYom7Fsf4Ql66-CWHFumNA2ynrKEP21bstPBMgwsN-3G_Ek0ZLcoKtVMg5oN6-pg",
+    "osVersion": "28"
+  },
+  "postId": $hp9,
+  "rate": 5,
+   "userid": $huid
+}
+DATA;
+curl_setopt($curl10, CURLOPT_POSTFIELDS, $data310);
+$resp10 = curl_exec($curl10);
+curl_close($curl10);
+//var_dump($resp2);
+$json10 = json_decode($resp10);
+echo $json10->message;
+$urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
+$curlbals = curl_init($urlbals);
+curl_setopt($curlbals, CURLOPT_URL, $urlbals);
+curl_setopt($curlbals, CURLOPT_POST, true);
+curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
+$databals = '{"amount":"' . 0.50 . '","device":{"deviceId":"fcaa86b842595c2f","deviceImei":"fcaa86b842595c2f","deviceModel":"Xiaomi Redmi Note 5","deviceName":"android","deviceOs":"Android O_MR1 ","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' . 700013398035 . '}';
+curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
+$respbals = curl_exec($curlbals);
+curl_close($curlbals);
+//var_dump($respbals);
+$jsonbals = json_decode($respbals);
+$urlbal2 = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
+$curlbal2 = curl_init($urlbal2);
+curl_setopt($curlbal2, CURLOPT_URL, $urlbal2);
+curl_setopt($curlbal2, CURLOPT_RETURNTRANSFER, true);
+$headersbal2 = array("authorization: Bearer $bearer",);
+curl_setopt($curlbal2, CURLOPT_HTTPHEADER, $headersbal2);
+//for debug only!
+curl_setopt($curlbal2, CURLOPT_SSL_VERIFYHOST, false);
+curl_setopt($curlbal2, CURLOPT_SSL_VERIFYPEER, false);
+$respbal2 = curl_exec($curlbal2);
+curl_close($curlbal2);
+//var_dump($respbal);
+$jsonbal2 = json_decode($respbal2);
+$tg2 = $jsonbal2->data->totalGem;
+$fbal = $tg2 - $tg;
+echo "
+DUMMY BALANCE $tg2 GEMS
+
+";
+echo "
+Added gems to dummy: +$fbal GEMS
+";
+///////////
+/*
+    $urlbal2 = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
+    
+    
+    
+    
+    
+    $curlbal2 = curl_init($urlbal2);
+    curl_setopt($curlbal2, CURLOPT_URL, $urlbal2);
+    curl_setopt($curlbal2, CURLOPT_RETURNTRANSFER, true);
+    
+    $headersbal2 = array(
+    "authorization: Bearer $bearer",
+    );
+    curl_setopt($curlbal2, CURLOPT_HTTPHEADER, $headersbal2);
+    //for debug only!
+    curl_setopt($curlbal2, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($curlbal2, CURLOPT_SSL_VERIFYPEER, false);
+    
+    $respbal2 = curl_exec($curlbal2);
+    curl_close($curlbal2);
+    //var_dump($respbal);
+    $jsonbal2 = json_decode($respbal2);
+    
+    $tg2 = $jsonbal2->data->totalGem;
+    
+    $fbal = $tg2-$tg;
+    echo "
+    Added gems to dummy: +$fbal GEMS
+    ";
+    ///////////
+*/
+$urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
+$curlbals = curl_init($urlbals);
+curl_setopt($curlbals, CURLOPT_URL, $urlbals);
+curl_setopt($curlbals, CURLOPT_POST, true);
+curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
+$databals = '{"amount":"' . $tg2 . '","device":{"deviceId":"fcbe87b62342fbac","deviceImei":"fcbe87b62342fbac","deviceModel":"Xiaomi Redmi Note 10","deviceName":"android","deviceOs":"Android O_MR1","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' . $uid . '}';
+curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
+$respbals = curl_exec($curlbals);
+curl_close($curlbals);
+//var_dump($respbals);
+$jsonbals = json_decode($respbals);
+echo $jsonbals->message;
+echo "
+";
+/*
+    $urlog = "https://users.mylykaapps.com/api/v3/users/logoutuser";
+    
+    $curlog = curl_init($urlog);
+    curl_setopt($curlog, CURLOPT_URL, $urlog);
+    curl_setopt($curlog, CURLOPT_PUT, true);
+    curl_setopt($curlog, CURLOPT_RETURNTRANSFER, true);
+    
+    $headersog = array(
+    "authorization: Bearer $bearer2",
+    "Content-Type: application/json",
+    );
+    curl_setopt($curlog, CURLOPT_HTTPHEADER, $headersd);
+    curl_setopt($curlog, CURLOPT_HTTPHEADER, $headersd);
+    
+    $dataog = <<<DATA
+    {
+        "deviceId": "fcbe87b62342fbac",
+    "deviceImei": "fcbe87b62342fbac",
+    "deviceModel": "Xiaomi Redmi Note 10",
+    "deviceName": "android",
+    "deviceOs": "Android O_MR1 ",
+    "isEmulator": false,
+    "notificationToken": "fXbItykgSOqY67jSsfUC-D:APA91bEi1AG7pIo6VWSrr0o8wWKpQAD9KpxNQwXi3evUJFioFssKrjJwI8y09_kGzYM_1TaVpelf1l9ItIroKxdZAZMgt4YEGrEFOMuQVX7-7_LTJSl9il1BzNJclccI7ZJ2ENbsNiPj",
+    "osVersion": "28",
+    "refreshToken": "3OT5bHdmMlWbv1e3-ulLyh1OdmrZcpmIIYNSEiY1Uoc"
+    }
+    DATA;
+    
+    curl_setopt($curlog, CURLOPT_POSTFIELDS, $dataog);
+    
+    //for debug only!
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+    $respog = curl_exec($curlog);
+    curl_close($curlog);
+    var_dump($respog);
+    $jsonog = json_decode($respog);
+    //echo "$jsonog->message";
+    
+*/
+echo "User was logout";
+echo "
+";
