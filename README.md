@@ -1,42 +1,47 @@
-# LYKA SCRIPT
+# LYKA SCRIPT ‼️
 
 REQUIREMENTS TO RUN THIS SCRIPT
 
 Termux App
 
-VPN APP (Recommend Server USA, CANADA, NEW ZEALAND, AUSTRIA).
-
 4 Main Account and have 11 picture post every day
 
-# How To Use
+# How To Use ?
 
-FOR FIRST TIME SET UP
+FIRST TIME SETUP ‼️
 
-Open Termux App and Enter
+OPEN TERMUX APP 🧑‍💻
 
-$ apt upgrade
+1ST STEP ENTER:
+pkg install game-repo -y
 
-$ apt update
+2ND STEP ENTER:
+pkg install science-repo -y
 
-$ pkg install php
+3RD STEP ENTER:
+pkg update -y
 
-$ pkg install git
+4TH STEP ENTER:
+pkg upgrade -y
 
-$ git clone https://github.com/lykahub/script
+5TH STEP ENTER:
+pkg install php -y
 
-Every Time Open Your Termux app you need enter
+6TH STEP ENTER:
+pkg install git -y
 
-#NOTE CONNECT YOUR VPN FIRST BEFORE DO THIS
+7TH STEP ENTER:
+git clone https://github.com/rhonbars2113/script
 
-$ cd script
+8TH STEP ENTER:
+cd script
 
-$ php script.php
+9TH STEP ENTER:
+php script.php
 
+========‼️=========
 
-Now Your SCRIPT is READY to use!
+COMMAND FOR RE-OPENING SCRIPT TYPE:
 
-
-MESSAGE ME TO GUIDE YOU MORE TRICKS IN LYKA
-
-
-IF YOU ENCOUNTER ANY PROBLEM'S OR YOU HAVE QUESTION, PLEASE MESSAGE ME https://m.me/ashly.kaye.37
+cd script
+php script.php
